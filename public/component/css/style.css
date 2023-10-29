@@ -13,3 +13,7 @@
 .sidebar-list::-webkit-scrollbar {
   display: none !important;
 }
+
+.all-variable-list::-webkit-scrollbar {
+  display: none !important;
+}

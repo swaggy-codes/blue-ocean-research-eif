@@ -341,3 +341,88 @@ export const debtToGDP = [
     debtToGDPAnnualChange: "-0.77%",
   },
 ];
+
+export const listOfAllVariables = [
+  {
+    name: "GDP Growth Value",
+  },
+  {
+    name: "IIP Data",
+  },
+  {
+    name: "CS",
+  },
+  {
+    name: "Trade",
+  },
+
+  {
+    name: "Inflation",
+  },
+  {
+    name: "Market",
+  },
+  {
+    name: "GDP",
+  },
+  {
+    name: "GDP Per Capita",
+  },
+  {
+    name: "GNI",
+  },
+  {
+    name: "GNI Per Capita",
+  },
+  {
+    name: "Debt To GDP",
+  },
+  {
+    name: "GNP",
+  },
+  {
+    name: "Economic Groth",
+  },
+  {
+    name: "Manufacturing",
+  },
+  {
+    name: "Trade To GDP",
+  },
+  {
+    name: "Exports",
+  },
+  {
+    name: "Imports",
+  },
+  {
+    name: "Foreign Direct Investment",
+  },
+  {
+    name: "Tariff",
+  },
+  {
+    name: "Agriculture",
+  },
+  {
+    name: "Exchange",
+  },
+  {
+    name: "Demographic",
+  },
+  {
+    name: "Interest Rate",
+  },
+  {
+    name: "Fiscal",
+  },
+  {
+    name: "Tax",
+  },
+  {
+    name: "BOP",
+  },
+  {
+    name: "View Data of All Variables",
+  },
+];
