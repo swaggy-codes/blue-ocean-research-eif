@@ -345,84 +345,107 @@ export const debtToGDP = [
 export const listOfAllVariables = [
   {
     name: "GDP Growth Value",
+    value: "gdpGrowth",
   },
   {
     name: "IIP Data",
+    value: "iip",
   },
   {
     name: "CS",
+    value: "cs",
   },
   {
     name: "Trade",
+    value: "tradeBalance",
   },
 
   {
     name: "Inflation",
+    value: "inflation",
   },
   {
     name: "Market",
+    value: "market",
   },
   {
     name: "GDP",
+    value: "gdp",
   },
   {
     name: "GDP Per Capita",
+    value: "gdpPC",
   },
   {
     name: "GNI",
+    value: "gni",
   },
   {
     name: "GNI Per Capita",
+    value: "gniPC",
   },
   {
     name: "Debt To GDP",
+    value: "debtToGDP",
   },
   {
     name: "GNP",
+    value: "gnp",
   },
   {
     name: "Economic Groth",
+    value: "economicGrowth",
   },
   {
     name: "Manufacturing",
+    value: "manufacturing",
   },
   {
     name: "Trade To GDP",
+    value: "tradeToGDP",
   },
   {
     name: "Exports",
+    value: "exports",
   },
   {
     name: "Imports",
+    value: "imports",
   },
   {
     name: "Foreign Direct Investment",
+    value: "fdi",
   },
   {
     name: "Tariff",
+    value: "tariff",
   },
   {
     name: "Agriculture",
+    value: "agriculture",
   },
   {
     name: "Exchange",
+    value: "exchange",
   },
   {
     name: "Demographic",
+    value: "demographic",
   },
   {
     name: "Interest Rate",
+    value: "interest",
   },
   {
     name: "Fiscal",
+    value: "fiscal",
   },
   {
     name: "Tax",
+    value: "tax",
   },
   {
     name: "BOP",
-  },
-  {
-    name: "View Data of All Variables",
+    value: "bop",
   },
 ];
