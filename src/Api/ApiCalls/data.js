@@ -5,6 +5,10 @@ export const getAllVariablesList = () => {
   return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=interest,market,tax`);
 };
 
+export const getSelectedVariablesData = (variableString) => {
+  return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=${variableString}`);
+};
+
 export const getVariableDetails = (variable) => {
   return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=${variable}`);
 };

@@ -11,7 +11,7 @@ const MainRouter = () => {
       <Routes>
         <Route exact path='/' element={<Economical />} />
         <Route path='/economical' element={<Economical />} />
-        <Route path='/view-all-varialbles' element={<ViewAllVariables />} />
+        <Route path='/view-all-variables' element={<ViewAllVariables />} />
         <Route path='/industrial' element={<Industrial />} />
         <Route path='/financial' element={<Financial />} />
       </Routes>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import { alpha } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -24,7 +24,10 @@ import { getApiWithoutToken } from "../../../Api/ApiSettings/ApiMethods";
 import { combined } from "../../../Utils/DemoJSON";
 import classes from "./Economical.module.css";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { getAllVariablesList, getSelectedVariablesData } from "../../../Api/ApiCalls/data";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -37,23 +40,7 @@ function createData(id, name, calories, fat, carbs, protein) {
   };
 }
 
-// const rows = [
-//   createData(1, "Cupcake", 305, 3.7, 67, 4.3),
-//   createData(2, "Donut", 452, 25.0, 51, 4.9),
-//   createData(3, "Eclair", 262, 16.0, 24, 6.0),
-//   createData(4, "Frozen yoghurt", 159, 6.0, 24, 4.0),
-//   createData(5, "Gingerbread", 356, 16.0, 49, 3.9),
-//   createData(6, "Honeycomb", 408, 3.2, 87, 6.5),
-//   createData(7, "Ice cream sandwich", 237, 9.0, 37, 4.3),
-//   createData(8, "Jelly Bean", 375, 0.0, 94, 0.0),
-//   createData(9, "KitKat", 518, 26.0, 65, 7.0),
-//   createData(10, "Lollipop", 392, 0.2, 98, 0.0),
-//   createData(11, "Marshmallow", 318, 0, 81, 2.0),
-//   createData(12, "Nougat", 360, 19.0, 9, 37.0),
-//   createData(13, "Oreo", 437, 18.0, 63, 4.0),
-// ];
-
-const rows = combined.valueOf();
+// const rows = combined.valueOf();
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -263,6 +250,15 @@ const ScreenOne = () => {
   const [dense, setDense] = React.useState(true);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
+  const [allVariablesData, setAllVariablesData] = useState({ data: [], loading: true });
+
+  const location = useLocation();
+
+  const checked = location?.state;
+  const str = location?.state?.str;
+
+  const rows = allVariablesData?.data || [];
+
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
@@ -314,16 +310,46 @@ const ScreenOne = () => {
 
   const visibleRows = React.useMemo(
     () => stableSort(rows, getComparator(order, orderBy)).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage),
-    [order, orderBy, page, rowsPerPage]
+    [order, orderBy, page, rowsPerPage, allVariablesData?.data]
   );
 
   const fetchAllVariables = async () => {
     try {
-      const res = await getApiWithoutToken("/economical/combined?variables=interest,market,tax");
+      const res = await getAllVariablesList();
+      if (res?.status === 200) {
+        setAllVariablesData((v) => ({
+          data: res?.data,
+          loading: false,
+        }));
+      }
+      console.log(res, "thisssssssssss...");
     } catch (error) {}
   };
 
-  console.log(combined, "this is the array...");
+  const fetchSelectedVariableData = async () => {
+    let variableString = str.slice(1);
+    console.log(variableString, "variableeeeeeeeeeeeeeeeeeeee");
+    try {
+      const res = await getSelectedVariablesData(variableString || "");
+      if (res?.status === 200) {
+        setAllVariablesData((v) => ({
+          data: res?.data,
+          loading: false,
+        }));
+      }
+      console.log(res, "selected varaibale data");
+    } catch (error) {}
+  };
+
+  console.log(checked, "this is the array...");
+
+  useEffect(() => {
+    if (checked !== null) {
+      fetchSelectedVariableData();
+    } else {
+      fetchAllVariables();
+    }
+  }, [checked]);
 
   return (
     <>
@@ -332,7 +358,17 @@ const ScreenOne = () => {
         <Grid item xs={16}>
           {/* <Typography>helloooooooooooooooooooo</Typography> */}
           <Box sx={{ width: "100%", padding: "0px 25px 25px 25px", color: "white" }}>
-            <Paper sx={{ width: "100%", mb: 2, bgcolor: "#020817", border: 1.5, borderColor: "white", borderRadius: "10px", color: "white" }}>
+            <Paper
+              sx={{
+                width: "100%",
+                mb: 2,
+                bgcolor: "#020817",
+                border: 1.5,
+                borderColor: "white",
+                borderRadius: "10px",
+                color: "white",
+                minHeight: "550px",
+              }}>
               <EnhancedTableToolbar numSelected={selected.length} />
               <TableContainer>
                 <Table
@@ -348,22 +384,23 @@ const ScreenOne = () => {
                     rowCount={rows.length}
                   />
                   <TableBody>
-                    {visibleRows.map((row, index) => {
-                      console.log(row, "this is row...");
-                      const isItemSelected = isSelected(row.id);
-                      const labelId = `enhanced-table-checkbox-${index}`;
+                    {allVariablesData?.data?.length > 0 &&
+                      visibleRows.map((row, index) => {
+                        console.log(row, "this is row...");
+                        const isItemSelected = isSelected(row.id);
+                        const labelId = `enhanced-table-checkbox-${index}`;
 
-                      return (
-                        <TableRow
-                          hover
-                          // onClick={(event) => handleClick(event, row.id)}
-                          role='checkbox'
-                          aria-checked={isItemSelected}
-                          tabIndex={-1}
-                          key={row.id}
-                          selected={isItemSelected}
-                          sx={{ cursor: "pointer" }}>
-                          {/* <TableCell padding='checkbox' className={classes.tableCell} style={{ width: "10%", textAlign: "center", color: "white" }}>
+                        return (
+                          <TableRow
+                            hover
+                            // onClick={(event) => handleClick(event, row.id)}
+                            role='checkbox'
+                            aria-checked={isItemSelected}
+                            tabIndex={-1}
+                            key={row.id}
+                            selected={isItemSelected}
+                            sx={{ cursor: "pointer" }}>
+                            {/* <TableCell padding='checkbox' className={classes.tableCell} style={{ width: "10%", textAlign: "center", color: "white" }}>
                               <Checkbox
                                 color='primary'
                                 checked={isItemSelected}
@@ -372,7 +409,7 @@ const ScreenOne = () => {
                                 }}
                               />
                             </TableCell> */}
-                          {/* <TableCell
+                            {/* <TableCell
                             component='th'
                             id={labelId}
                             scope='row'
@@ -380,42 +417,42 @@ const ScreenOne = () => {
                             style={{ width: "10%", textAlign: "center", color: "white" }}>
                             {row.name || "N/A"}
                           </TableCell> */}
-                          <TableCell align='right' className={classes.tableCell}>
-                            {Number(row.year) || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.High || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.Low || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.shortTermDebt || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.longTermDebt || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.Open || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.Close || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.interestPayments || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.netCorporateTax || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.gdpAtCurrentPrice || "N/A"}
-                          </TableCell>
-                          <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                            {row.corporateTaxAsPercentsgeOfGdp || "N/A"}
-                          </TableCell>
-                        </TableRow>
-                      );
-                    })}
+                            <TableCell align='right' className={classes.tableCell} style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {Number(row.year) || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.High || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.Low || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.shortTermDebt || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.longTermDebt || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.Open || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.Close || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.interestPayments || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.netCorporateTax || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.gdpAtCurrentPrice || "N/A"}
+                            </TableCell>
+                            <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
+                              {row.corporateTaxAsPercentsgeOfGdp || "N/A"}
+                            </TableCell>
+                          </TableRow>
+                        );
+                      })}
                     {emptyRows > 0 && (
                       <TableRow
                         style={{
@@ -426,6 +463,13 @@ const ScreenOne = () => {
                     )}
                   </TableBody>
                 </Table>
+                {allVariablesData?.loading === true ? (
+                  <Box sx={{ display: "flex", justifyContent: "center", marginTop: "100px", marginBottom: "250px" }}>
+                    <CircularProgress sx={{ color: "white !important" }} />
+                  </Box>
+                ) : (
+                  ""
+                )}
               </TableContainer>
               <TablePagination
                 rowsPerPageOptions={[10, 25]}

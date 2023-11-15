@@ -26,6 +26,7 @@ import styles from "./Economical.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CalculateCorrelation from "./CalculateCorrelation";
+import { getSelectedVariablesData } from "../../../Api/ApiCalls/data";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -39,6 +40,7 @@ function createData(id, name, calories, fat, carbs, protein) {
 }
 
 const rows = listOfAllVariables.valueOf();
+let str = "";
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -234,6 +236,8 @@ EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
+const fetchAllVariables = () => {};
+
 const ScreenOne = () => {
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("calories");
@@ -241,6 +245,7 @@ const ScreenOne = () => {
   const [page, setPage] = useState(0);
   const [dense, setDense] = useState(true);
   const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [checked, setChecked] = useState([]);
 
   const navigate = useNavigate();
 
@@ -298,14 +303,6 @@ const ScreenOne = () => {
     [order, orderBy, page, rowsPerPage]
   );
 
-  const fetchAllVariables = async () => {
-    try {
-      const res = await getApiWithoutToken("/economical/combined?variables=interest,market,tax");
-    } catch (error) {}
-  };
-
-  const [checked, setChecked] = useState([0]);
-
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -317,9 +314,11 @@ const ScreenOne = () => {
     }
 
     setChecked(newChecked);
+    console.log(value, "this is the array... +++ ");
+    str = str + "," + value?.value;
   };
 
-  console.log(checked, "this is the array...");
+  console.log(checked, "this is the array...", str);
 
   return (
     <>
@@ -335,10 +334,21 @@ const ScreenOne = () => {
                   size='medium'
                   sx={{ color: "white", borderColor: "white" }}
                   onClick={() => {
-                    navigate("/view-all-varialbles");
+                    navigate("/view-all-variables");
                   }}>
                   View All
                 </Button>
+                {checked.length !== 0 && (
+                  <Button
+                    variant='outlined'
+                    size='medium'
+                    sx={{ color: "white", borderColor: "white" }}
+                    onClick={() => {
+                      navigate("/view-all-variables", { state: { checked, str } });
+                    }}>
+                    View Selected
+                  </Button>
+                )}
               </Box>
               <List
                 className='all-variable-list'
