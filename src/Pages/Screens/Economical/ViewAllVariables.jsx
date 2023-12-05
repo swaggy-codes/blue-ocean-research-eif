@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Box, CircularProgress, Grid, Typography } from "@mui/material";
+import { useState, useEffect, useMemo } from "react";
+import { Box, CircularProgress, Grid, Link, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import { alpha } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -24,10 +25,8 @@ import { getApiWithoutToken } from "../../../Api/ApiSettings/ApiMethods";
 import { combined } from "../../../Utils/DemoJSON";
 import classes from "./Economical.module.css";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { getAllVariablesList, getSelectedVariablesData } from "../../../Api/ApiCalls/data";
-import { useEffect } from "react";
-import { useState } from "react";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -242,15 +241,15 @@ EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
-const ScreenOne = () => {
-  const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("calories");
-  const [selected, setSelected] = React.useState([]);
-  const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(true);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+const ViewAllVariables = () => {
+  const [order, setOrder] = useState("asc");
+  const [orderBy, setOrderBy] = useState("calories");
+  const [selected, setSelected] = useState([]);
+  const [page, setPage] = useState(0);
+  const [dense, setDense] = useState(true);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  const [allVariablesData, setAllVariablesData] = useState({ data: [], loading: true });
+  const [allVariablesData, setAllVariablesData] = useState({ data: [], loading: true, error: "" });
 
   const location = useLocation();
 
@@ -308,7 +307,7 @@ const ScreenOne = () => {
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
-  const visibleRows = React.useMemo(
+  const visibleRows = useMemo(
     () => stableSort(rows, getComparator(order, orderBy)).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage),
     [order, orderBy, page, rowsPerPage, allVariablesData?.data]
   );
@@ -318,12 +317,19 @@ const ScreenOne = () => {
       const res = await getAllVariablesList();
       if (res?.status === 200) {
         setAllVariablesData((v) => ({
+          ...v,
           data: res?.data,
           loading: false,
         }));
       }
-      console.log(res, "thisssssssssss...");
-    } catch (error) {}
+    } catch (error) {
+      console.log(error, "thisssssssssss...");
+      setAllVariablesData((v) => ({
+        data: [],
+        loading: false,
+        error: error?.message,
+      }));
+    }
   };
 
   const fetchSelectedVariableData = async () => {
@@ -333,12 +339,20 @@ const ScreenOne = () => {
       const res = await getSelectedVariablesData(variableString || "");
       if (res?.status === 200) {
         setAllVariablesData((v) => ({
+          ...v,
           data: res?.data,
           loading: false,
         }));
       }
       console.log(res, "selected varaibale data");
-    } catch (error) {}
+    } catch (error) {
+      console.log(error, "thisssssssssss...");
+      setAllVariablesData((v) => ({
+        data: [],
+        loading: false,
+        error: error?.message,
+      }));
+    }
   };
 
   console.log(checked, "this is the array...");
@@ -471,6 +485,16 @@ const ScreenOne = () => {
                   ""
                 )}
               </TableContainer>
+              {allVariablesData?.error !== "" && (
+                <TableContainer>
+                  <Box margin={20}>
+                    <h4>{allVariablesData?.error + "!"}</h4>
+                    <Link href='/economical' underline='hover' color='inherit'>
+                      {"Click to go back!"}
+                    </Link>
+                  </Box>
+                </TableContainer>
+              )}
               <TablePagination
                 rowsPerPageOptions={[10, 25]}
                 component='div'
@@ -493,4 +517,4 @@ const ScreenOne = () => {
   );
 };
 
-export default ScreenOne;
+export default ViewAllVariables;

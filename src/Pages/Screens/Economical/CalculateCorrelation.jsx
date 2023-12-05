@@ -55,7 +55,7 @@ const CalculateCorrelation = () => {
       <Box>
         <Box sx={{ minWidth: 100, display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
           <FormControl sx={{ width: "40%" }}>
-            <h7>Select Variable A</h7>
+            <h6>Select Variable A</h6>
             {/* <InputLabel id='demo-simple-select-label'>Age</InputLabel> */}
             <Select
               labelId='demo-simple-select-label'
@@ -86,7 +86,7 @@ const CalculateCorrelation = () => {
             </Select>
           </FormControl>
           <FormControl sx={{ width: "40%" }}>
-            <h7>Select Variable B</h7>
+            <h6>Select Variable B</h6>
             {/* <InputLabel id='demo-simple-select-label'>Age</InputLabel> */}
             <Select
               labelId='demo-simple-select-label'
@@ -122,7 +122,7 @@ const CalculateCorrelation = () => {
       <Box>
         <Box sx={{ minWidth: 100, display: "flex", flexDirection: "row", justifyContent: "space-around", marginTop: "10px" }}>
           <FormControl sx={{ width: "40%" }}>
-            <h7>Select Variable A's Value</h7>
+            <h6>Select Variable A's Value</h6>
             {/* <InputLabel id='demo-simple-select-label'>Age</InputLabel> */}
             <Select
               labelId='demo-simple-select-label'
@@ -153,7 +153,7 @@ const CalculateCorrelation = () => {
             </Select>
           </FormControl>
           <FormControl sx={{ width: "40%" }}>
-            <h7>Select Variable B's Value</h7>
+            <h6>Select Variable B's Value</h6>
             {/* <InputLabel id='demo-simple-select-label'>Age</InputLabel> */}
             <Select
               labelId='demo-simple-select-label'

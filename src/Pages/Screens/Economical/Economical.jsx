@@ -365,7 +365,9 @@ const ScreenOne = () => {
                 {rows.map((el, i) => {
                   const labelId = `checkbox-list-label-${el}`;
 
-                  console.log(el, "element");
+                  {
+                    /* console.log(el, "element"); */
+                  }
 
                   return (
                     <ListItem

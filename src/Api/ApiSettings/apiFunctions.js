@@ -12,5 +12,6 @@ export const wrappedGet = async (url, method, params) => {
     return await instance(config);
   } catch (error) {
     console.log(error, "this is the error!");
+    return await instance(config);
   }
 };

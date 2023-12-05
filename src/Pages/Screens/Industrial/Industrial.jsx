@@ -1,9 +1,12 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 const Industrial = () => {
   return (
     <>
-      <h1 style={{ color: "white" }}>Industrial</h1>
+      <Box sx={{ minHeight: "100vh" }}>
+        <h1 style={{ color: "white" }}>Industrial</h1>
+      </Box>
     </>
   );
 };
