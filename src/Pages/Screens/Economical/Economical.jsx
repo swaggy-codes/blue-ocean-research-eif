@@ -323,7 +323,7 @@ const ScreenOne = () => {
   return (
     <>
       {/* <h1 style={{ color: "white" }}>Economical</h1> */}
-      <Box sx={{ minHeight: "100vh" }}>
+      <Box>
         <Grid container spacing={2} columns={16}>
           <Grid item xs={6}>
             <Box sx={{ marginLeft: "50px" }}>
@@ -351,15 +351,16 @@ const ScreenOne = () => {
                 )}
               </Box>
               <List
-                className='all-variable-list'
+                className='custom-scrollbar'
                 sx={{
                   width: "100%",
                   maxWidth: "auto",
+                  height: "80vh",
                   bgcolor: "#020817",
                   border: 1.5,
                   borderColor: "white",
                   borderRadius: "10px",
-                  maxHeight: "500px",
+                  // maxHeight: "500px",
                   overflowY: "auto",
                 }}>
                 {rows.map((el, i) => {

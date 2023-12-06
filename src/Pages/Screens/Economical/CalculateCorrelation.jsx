@@ -187,7 +187,7 @@ const CalculateCorrelation = () => {
       </Box>
       <Typography sx={{ fontWeight: "bold", fontSize: "h5.fontSize", marginBottom: "10px", marginTop: "10px" }}>Correlation Graph</Typography>
       <Box>
-        <img src={GraphImage} width='600' height='300' />
+        <img src={GraphImage} width='800' height='500' />
       </Box>
     </Box>
   );

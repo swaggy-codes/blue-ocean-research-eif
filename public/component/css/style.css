@@ -14,6 +14,7 @@
   display: none !important;
 }
 
-.all-variable-list::-webkit-scrollbar {
-  display: none !important;
-}
+/* .custom-table-wrapper {
+  height: 100%;
+  overflow-y: auto;
+} */

@@ -1,232 +1,7 @@
-import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 import CustomTable from "../../../../Components/CustomTable/CustomTable";
+import { Box, TableCell, TableHead, TableRow, TableSortLabel } from "@mui/material";
 import { balanceSheetDataYearlyINFY, headingForBalanceSheet } from "../../../../Utils/DemoJSON";
-
-const headCells = [
-  // {
-  //   id: "date",
-  //   numeric: true,
-  //   disablePadding: false,
-  //   label: "Date",
-  // },
-  {
-    id: "reportedCurrency",
-    numeric: true,
-    disablePadding: false,
-    label: "Reported Currency",
-  },
-  {
-    id: "totalAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Assets",
-  },
-  {
-    id: "totalCurrentAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Current Assets",
-  },
-  {
-    id: "cashAndCashEquivalentsAtCarryingValue",
-    numeric: true,
-    disablePadding: false,
-    label: "Cash and Cash Equivalent at CAarrying Value",
-  },
-  {
-    id: "cashAndShortTermInvestments",
-    numeric: true,
-    disablePadding: false,
-    label: "Cash and Short Term Investments",
-  },
-  {
-    id: "inventory",
-    numeric: true,
-    disablePadding: false,
-    label: "Inventory",
-  },
-  {
-    id: "currentNetReceivables",
-    numeric: true,
-    disablePadding: false,
-    label: "Current Net Recievables",
-  },
-  {
-    id: "totalNonCurrentAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Non Current Assets",
-  },
-  {
-    id: "propertyPlantEquipment",
-    numeric: true,
-    disablePadding: false,
-    label: "Property Planet Equivalent",
-  },
-  {
-    id: "accumulatedDepreciationAmortizationPPE",
-    numeric: true,
-    disablePadding: false,
-    label: "Accumulated Depreciation Amortizarion PPE",
-  },
-  {
-    id: "intangibleAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Intangible Assets",
-  },
-  {
-    id: "intangibleAssetsExcludingGoodwill",
-    numeric: true,
-    disablePadding: false,
-    label: "Intangible Assets Excluding Goodwill",
-  },
-  {
-    id: "goodwill",
-    numeric: true,
-    disablePadding: false,
-    label: "Goodwill",
-  },
-  {
-    id: "investments",
-    numeric: true,
-    disablePadding: false,
-    label: "Investments",
-  },
-  {
-    id: "longTermInvestments",
-    numeric: true,
-    disablePadding: false,
-    label: "Long Term Investments",
-  },
-  {
-    id: "shortTermInvestments",
-    numeric: true,
-    disablePadding: false,
-    label: "Short Term Investments",
-  },
-  {
-    id: "otherCurrentAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Other Current Assets",
-  },
-  {
-    id: "otherNonCurrentAssets",
-    numeric: true,
-    disablePadding: false,
-    label: "Other Non Current Assets",
-  },
-  {
-    id: "totalLiabilities",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Liabilities",
-  },
-  {
-    id: "totalCurrentLiabilities",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Current Liabilities",
-  },
-  {
-    id: "currentAccountsPayable",
-    numeric: true,
-    disablePadding: false,
-    label: "Current Account Payable",
-  },
-  {
-    id: "deferredRevenue",
-    numeric: true,
-    disablePadding: false,
-    label: "Deferred Revenue",
-  },
-  {
-    id: "currentDebt",
-    numeric: true,
-    disablePadding: false,
-    label: "Current Debt",
-  },
-  {
-    id: "shortTermDebt",
-    numeric: true,
-    disablePadding: false,
-    label: "Short Term Debt",
-  },
-  {
-    id: "totalNonCurrentLiabilities",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Non Current Liabilities",
-  },
-  {
-    id: "capitalLeaseObligations",
-    numeric: true,
-    disablePadding: false,
-    label: "Capital Lease Obligationa",
-  },
-  {
-    id: "longTermDebt",
-    numeric: true,
-    disablePadding: false,
-    label: "Long Term Debt",
-  },
-  {
-    id: "longTermDebtNoncurrent",
-    numeric: true,
-    disablePadding: false,
-    label: "Long Term Debt Non Current",
-  },
-  {
-    id: "shortLongTermDebtTotal",
-    numeric: true,
-    disablePadding: false,
-    label: "Short Term Debt Total",
-  },
-  {
-    id: "otherCurrentLiabilities",
-    numeric: true,
-    disablePadding: false,
-    label: "Other Current Liabilities",
-  },
-  {
-    id: "otherNonCurrentLiabilities",
-    numeric: true,
-    disablePadding: false,
-    label: "Other Non Current Liabilities",
-  },
-  {
-    id: "totalShareholderEquity",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Share Holder Equity",
-  },
-  {
-    id: "treasuryStock",
-    numeric: true,
-    disablePadding: false,
-    label: "Treasury Stock",
-  },
-  {
-    id: "retainedEarnings",
-    numeric: true,
-    disablePadding: false,
-    label: "Retained Earnings",
-  },
-  {
-    id: "commonStock",
-    numeric: true,
-    disablePadding: false,
-    label: "Common Stock",
-  },
-  {
-    id: "commonStockSharesOutstanding",
-    numeric: true,
-    disablePadding: false,
-    label: "Common Stock Shares Outstanding",
-  },
-];
 
 function EnhancedTableHead(props) {
   const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
@@ -256,7 +31,7 @@ function EnhancedTableHead(props) {
              }}
            />
          </TableCell> */}
-        {headCells.map((headCell) => (
+        {/* {headCells.map((headCell) => (
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? "center" : "center"}
@@ -276,7 +51,7 @@ function EnhancedTableHead(props) {
               ) : null}
             </TableSortLabel>
           </TableCell>
-        ))}
+        ))} */}
       </TableRow>
     </TableHead>
   );
@@ -342,10 +117,9 @@ const BalanceSheetData = ({ props }) => {
   console.log(rowDataToShow, "this is the row data... <<<<<<<<<<<<<<<<< ", balanceSheetData?.data?.yearly);
 
   return (
-    <div>
-      <hr style={{ color: "white" }} />
+    <Box>
       <CustomTable headers={headingForBalanceSheet} data={balanceSheetDataYearlyINFY} />
-    </div>
+    </Box>
   );
 };
 

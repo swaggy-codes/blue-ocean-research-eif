@@ -17660,6 +17660,12 @@ export const stagesForScreenTwo = [
 
 export const headingForBalanceSheet = [
   {
+    key: "fiscalDateEnding",
+    numeric: true,
+    disablePadding: false,
+    heading: "Fiscal Date Ending",
+  },
+  {
     key: "reportedCurrency",
     numeric: true,
     disablePadding: false,
@@ -17874,6 +17880,357 @@ export const headingForBalanceSheet = [
     numeric: true,
     disablePadding: false,
     heading: "Common Stock Shares Outstanding",
+  },
+];
+
+export const headingForIncomeStatementData = [
+  {
+    key: "fiscalDateEnding",
+    numeric: true,
+    disablePadding: false,
+    heading: "Fiscal Date Ending",
+  },
+  {
+    key: "reportedCurrency",
+    numeric: true,
+    disablePadding: false,
+    heading: "Reported Currency",
+  },
+  {
+    key: "grossProfit",
+    numeric: true,
+    disablePadding: false,
+    heading: "Gross Profit",
+  },
+  {
+    key: "totalRevenue",
+    numeric: true,
+    disablePadding: false,
+    heading: "Total Revenue",
+  },
+  {
+    key: "costOfRevenue",
+    numeric: true,
+    disablePadding: false,
+    heading: "Cost of Revenue",
+  },
+  {
+    key: "costofGoodsAndServicesSold",
+    numeric: true,
+    disablePadding: false,
+    heading: "Cost of Goods and Services Sold",
+  },
+  {
+    key: "operatingIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "Operating Income",
+  },
+  {
+    key: "sellingGeneralAndAdministrative",
+    numeric: true,
+    disablePadding: false,
+    heading: "Selling General and Administrative",
+  },
+  {
+    key: "researchAndDevelopment",
+    numeric: true,
+    disablePadding: false,
+    heading: "Research and Development",
+  },
+  {
+    key: "operatingExpenses",
+    numeric: true,
+    disablePadding: false,
+    heading: "operatingExpenses",
+  },
+  {
+    key: "investmentIncomeNet",
+    numeric: true,
+    disablePadding: false,
+    heading: "investmentIncomeNet",
+  },
+  {
+    key: "netInterestIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "netInterestIncome",
+  },
+  {
+    key: "interestExpense",
+    numeric: true,
+    disablePadding: false,
+    heading: "interestExpense",
+  },
+  {
+    key: "nonInterestIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "nonInterestIncome",
+  },
+  {
+    key: "otherNonOperatingIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "otherNonOperatingIncome",
+  },
+  {
+    key: "depreciation",
+    numeric: true,
+    disablePadding: false,
+    heading: "depreciation",
+  },
+  {
+    key: "depreciationAndAmortization",
+    numeric: true,
+    disablePadding: false,
+    heading: "depreciationAndAmortization",
+  },
+  {
+    key: "incomeBeforeTax",
+    numeric: true,
+    disablePadding: false,
+    heading: "incomeBeforeTax",
+  },
+  {
+    key: "incomeTaxExpense",
+    numeric: true,
+    disablePadding: false,
+    heading: "incomeTaxExpense",
+  },
+  {
+    key: "interestAndDebtExpense",
+    numeric: true,
+    disablePadding: false,
+    heading: "interestAndDebtExpense",
+  },
+  {
+    key: "netIncomeFromContinuingOperations",
+    numeric: true,
+    disablePadding: false,
+    heading: "netIncomeFromContinuingOperations",
+  },
+  {
+    key: "comprehensiveIncomeNetOfTax",
+    numeric: true,
+    disablePadding: false,
+    heading: "comprehensiveIncomeNetOfTax",
+  },
+  {
+    key: "ebit",
+    numeric: true,
+    disablePadding: false,
+    heading: "ebit",
+  },
+  {
+    key: "ebitda",
+    numeric: true,
+    disablePadding: false,
+    heading: "ebitda",
+  },
+  {
+    key: "netIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "netIncome",
+  },
+];
+
+export const headingForCashFlowData = [
+  {
+    key: "fiscalDateEnding",
+    numeric: true,
+    disablePadding: false,
+    heading: "Fiscal Date Ending",
+  },
+  {
+    key: "reportedCurrency",
+    numeric: true,
+    disablePadding: false,
+    heading: "Reported Currency",
+  },
+  {
+    key: "operatingCashflow",
+    numeric: true,
+    disablePadding: false,
+    heading: "Operating Cashflow",
+  },
+  {
+    key: "paymentsForOperatingActivities",
+    numeric: true,
+    disablePadding: false,
+    heading: "Payments For Operating Activities",
+  },
+  {
+    key: "proceedsFromOperatingActivities",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Operating Activities",
+  },
+  {
+    key: "changeInOperatingLiabilities",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Operating Liabilities",
+  },
+  {
+    key: "changeInOperatingAssets",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Operating Assets",
+  },
+  {
+    key: "depreciationDepletionAndAmortization",
+    numeric: true,
+    disablePadding: false,
+    heading: "Depreciation Depletion And Amortization",
+  },
+  {
+    key: "capitalExpenditures",
+    numeric: true,
+    disablePadding: false,
+    heading: "Capital Expenditures",
+  },
+  {
+    key: "changeInReceivables",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Receivables",
+  },
+  {
+    key: "changeInInventory",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Inventory",
+  },
+  {
+    key: "profitLoss",
+    numeric: true,
+    disablePadding: false,
+    heading: "Profit Loss",
+  },
+  {
+    key: "cashflowFromInvestment",
+    numeric: true,
+    disablePadding: false,
+    heading: "Cashflow From Investment",
+  },
+  {
+    key: "cashflowFromFinancing",
+    numeric: true,
+    disablePadding: false,
+    heading: "Cashflow From Financing",
+  },
+  {
+    key: "proceedsFromRepaymentsOfShortTermDebt",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Repayments Of Short Term Debt",
+  },
+  {
+    key: "paymentsForRepurchaseOfCommonStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Payments For Repurchase Of Common Stock",
+  },
+  {
+    key: "paymentsForRepurchaseOfEquity",
+    numeric: true,
+    disablePadding: false,
+    heading: "Payments For Repurchase Of Equity",
+  },
+  {
+    key: "paymentsForRepurchaseOfPreferredStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Payments For Repurchase Of Preferred Stock",
+  },
+  {
+    key: "dividendPayout",
+    numeric: true,
+    disablePadding: false,
+    heading: "Dividend Payout",
+  },
+  {
+    key: "dividendPayoutCommonStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Dividend Payout Common Stock",
+  },
+  {
+    key: "dividendPayoutPreferredStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Dividend Payout Preferred Stock",
+  },
+  {
+    key: "proceedsFromIssuanceOfCommonStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Issuance Of Common Stock",
+  },
+  {
+    key: "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Issuance Of Long Term Debt And Capital Securities Net",
+  },
+  {
+    key: "proceedsFromIssuanceOfPreferredStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Issuance Of Preferred Stock",
+  },
+  {
+    key: "proceedsFromRepurchaseOfEquity",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Repurchase Of Equity",
+  },
+  {
+    key: "proceedsFromSaleOfTreasuryStock",
+    numeric: true,
+    disablePadding: false,
+    heading: "Proceeds From Sale Of Treasury Stock",
+  },
+  {
+    key: "changeInCashAndCashEquivalents",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Cash And Cash Equivalents",
+  },
+  {
+    key: "changeInExchangeRate",
+    numeric: true,
+    disablePadding: false,
+    heading: "Change In Exchange Rate",
+  },
+  {
+    key: "netIncome",
+    numeric: true,
+    disablePadding: false,
+    heading: "Net Income",
+  },
+];
+
+export const headingForRatios = [
+  {
+    key: "ratioId",
+    numeric: true,
+    disablePadding: false,
+    heading: "Ratio Id",
+  },
+  {
+    key: "ratioName",
+    numeric: true,
+    disablePadding: false,
+    heading: "Ratio Name",
+  },
+  {
+    key: "ratioValue",
+    numeric: true,
+    disablePadding: false,
+    heading: "Ratio Value",
   },
 ];
 

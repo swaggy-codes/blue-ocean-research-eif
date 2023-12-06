@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { getBalanceSheetData, getCashflowData, getCompanyOverviewData, getIncomeStatementData } from "../../../Api/ApiCalls/data";
 import {
   cashFlowDataYearlyINFY,
   cashFlowDataQuaterlyINFY,
@@ -9,41 +8,13 @@ import {
   balanceSheetDataYearlyINFY,
   companyOverviewDataINFY,
 } from "../../../Utils/DemoJSON";
-import { Box, Card, CardContent, Typography, makeStyles } from "@mui/material";
-import { styled } from "@mui/system";
-import CarouselForMultipleDetailedCards from "./CarouselForMultipleDetailedCards";
+import { Box } from "@mui/material";
+import Ratios from "./DIfferentViews/Ratios";
+import CashFlowData from "./DIfferentViews/CashFlowData";
 import BalanceSheetData from "./DIfferentViews/BalanceSheetData";
 import IncomeStatementData from "./DIfferentViews/IncomeStatementData";
-import CashFlowData from "./DIfferentViews/CashFlowData";
-import Ratios from "./DIfferentViews/Ratios";
 import CompanyOverviewData from "./DIfferentViews/CompanyOverviewData";
-
-const FinancialCard = styled(Card)({
-  maxWidth: 400,
-  margin: "auto",
-  marginTop: 50,
-  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  transition: "transform 0.2s",
-  borderRadius: 16,
-  overflow: "hidden",
-  backgroundColor: "#fff",
-  "&:hover": {
-    transform: "scale(1.02)",
-  },
-});
-
-const Title = styled("div")({
-  fontSize: 24,
-  fontWeight: "bold",
-  marginBottom: 16,
-  color: "#333",
-});
-
-const DetailItem = styled("div")({
-  marginBottom: 12,
-  fontSize: 16,
-  color: "#555",
-});
+import { getBalanceSheetData, getCashflowData, getCompanyOverviewData, getIncomeStatementData } from "../../../Api/ApiCalls/data";
 
 const Financial = () => {
   const [step, setStep] = useState(1);
@@ -98,19 +69,7 @@ const Financial = () => {
 
   return (
     <>
-      <Box sx={{ minHeight: "100vh" }}>
-        {/* <h5 style={{ color: "white" }}>Financial</h5> */}
-        {/* <FinancialCard>
-          <CardContent>
-            <Title>Balance Sheet Data</Title>
-
-            <DetailItem>Fiscal Date Ending: {cashFlowData?.data?.yearly?.[0]?.fiscalDateEnding}</DetailItem>
-            <DetailItem>Reported Currency: {cashFlowData?.data?.yearly?.[0]?.reportedCurrency}</DetailItem>
-            <DetailItem>Operating Cashflow: {cashFlowData?.data?.yearly?.[0]?.operatingCashflow}</DetailItem>
-            <DetailItem>Payments for Operating Activities: {cashFlowData?.data?.yearly?.[0]?.paymentsForOperatingActivities}</DetailItem>
-          </CardContent>
-        </FinancialCard> */}
-        {/* <CarouselForMultipleDetailedCards cashFlowData={cashFlowData} /> */}
+      <Box>
         <Box sx={{ padding: "20px", paddingTop: "0px" }}>
           <div className='main mt-2'>
             <div className='mob-p-0'>

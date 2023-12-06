@@ -368,7 +368,7 @@ const ViewAllVariables = () => {
   return (
     <>
       {/* <h1 style={{ color: "white" }}>Economical</h1> */}
-      <Box sx={{ minHeight: "100vh" }}>
+      <Box>
         <Grid item xs={16}>
           {/* <Typography>helloooooooooooooooooooo</Typography> */}
           <Box sx={{ width: "100%", padding: "0px 25px 25px 25px", color: "white" }}>
