@@ -1,4 +1,6 @@
-const API_BASE_URL = "http://3.7.37.104:8080";
+// const API_BASE_URL = "http://3.7.37.104:8080";
+
+import { API_BASE_URL } from "../../Utils/BaseUrl";
 
 const API = {
   GET_ALL_VARIABLES: API_BASE_URL + "/economical/combined",

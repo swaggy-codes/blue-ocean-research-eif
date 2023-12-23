@@ -22,11 +22,12 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 import { getApiWithoutToken } from "../../../Api/ApiSettings/ApiMethods";
-import { combined } from "../../../Utils/DemoJSON";
+import { combined, headingForViewVariablesTable } from "../../../Utils/DemoJSON";
 import classes from "./Economical.module.css";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { getAllVariablesList, getSelectedVariablesData } from "../../../Api/ApiCalls/data";
+import CustomTable from "../../../Components/CustomTable/CustomTable";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -247,7 +248,7 @@ const ViewAllVariables = () => {
   const [selected, setSelected] = useState([]);
   const [page, setPage] = useState(0);
   const [dense, setDense] = useState(true);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rowsPerPage, setRowsPerPage] = useState(12);
 
   const [allVariablesData, setAllVariablesData] = useState({ data: [], loading: true, error: "" });
 
@@ -316,6 +317,7 @@ const ViewAllVariables = () => {
     try {
       const res = await getAllVariablesList();
       if (res?.status === 200) {
+        console.log(res, "this is response");
         setAllVariablesData((v) => ({
           ...v,
           data: res?.data,
@@ -365,12 +367,15 @@ const ViewAllVariables = () => {
     }
   }, [checked]);
 
+  // useEffect(() => {
+  //   fetchAllVariables();
+  // }, []);
+
   return (
     <>
-      {/* <h1 style={{ color: "white" }}>Economical</h1> */}
       <Box>
+        {/* <CustomTable headers={headingForViewVariablesTable} data={allVariablesData?.data} tableHeading={"View Variables"} /> */}
         <Grid item xs={16}>
-          {/* <Typography>helloooooooooooooooooooo</Typography> */}
           <Box sx={{ width: "100%", padding: "0px 25px 25px 25px", color: "white" }}>
             <Paper
               sx={{
@@ -379,14 +384,14 @@ const ViewAllVariables = () => {
                 bgcolor: "#020817",
                 border: 1.5,
                 borderColor: "white",
-                borderRadius: "10px",
+                // borderRadius: "10px",
                 color: "white",
-                minHeight: "550px",
+                minHeight: "80vh",
               }}>
               <EnhancedTableToolbar numSelected={selected.length} />
-              <TableContainer>
+              <TableContainer sx={{ minHeight: "60vh" }}>
                 <Table
-                  sx={{ minWidth: 750, bgcolor: "#020817", border: 1.5, borderColor: "white", borderRadius: "10px", height: "auto" }}
+                  sx={{ minWidth: 750, bgcolor: "#020817", border: 1.5, borderColor: "white", height: "auto", minHeight: "10vh", maxHeight: "auto" }}
                   aria-labelledby='tableTitle'
                   size={dense ? "small" : "medium"}>
                   <EnhancedTableHead
@@ -441,10 +446,10 @@ const ViewAllVariables = () => {
                               {row.Low || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.shortTermDebt || "N/A"}
+                              {row.ShorttermDebt || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.longTermDebt || "N/A"}
+                              {row.LongtermDebt || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
                               {row.Open || "N/A"}
@@ -453,16 +458,16 @@ const ViewAllVariables = () => {
                               {row.Close || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.interestPayments || "N/A"}
+                              {row.InterestPayments || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.netCorporateTax || "N/A"}
+                              {row.NetCorporateTax || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.gdpAtCurrentPrice || "N/A"}
+                              {row.GDPatcurrentPrice || "N/A"}
                             </TableCell>
                             <TableCell align='right' style={{ width: "10%", textAlign: "center", color: "white" }}>
-                              {row.corporateTaxAsPercentsgeOfGdp || "N/A"}
+                              {row.CorporateTaxasofGDP || "N/A"}
                             </TableCell>
                           </TableRow>
                         );
@@ -496,7 +501,7 @@ const ViewAllVariables = () => {
                 </TableContainer>
               )}
               <TablePagination
-                rowsPerPageOptions={[10, 25]}
+                rowsPerPageOptions={[10, 15]}
                 component='div'
                 count={rows.length}
                 rowsPerPage={rowsPerPage}

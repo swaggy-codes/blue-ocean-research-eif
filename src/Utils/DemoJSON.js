@@ -18296,3 +18296,72 @@ export const GroupTags = [
     color: "#E73F3F",
   },
 ];
+
+export const headingForViewVariablesTable = [
+  {
+    key: "year",
+    numeric: true,
+    disablePadding: false,
+    heading: "Year",
+  },
+  {
+    key: "High",
+    numeric: true,
+    disablePadding: false,
+    heading: "High",
+  },
+  {
+    key: "Low",
+    numeric: true,
+    disablePadding: false,
+    heading: "Low",
+  },
+  {
+    key: "ShorttermDebt",
+    numeric: true,
+    disablePadding: false,
+    heading: "Short Term Debt",
+  },
+  {
+    key: "LongtermDebt",
+    numeric: true,
+    disablePadding: false,
+    heading: "Long Term Debt",
+  },
+  {
+    key: "Open",
+    numeric: true,
+    disablePadding: false,
+    heading: "Open",
+  },
+  {
+    key: "Close",
+    numeric: true,
+    disablePadding: false,
+    heading: "Close",
+  },
+  {
+    key: "InterestPayments",
+    numeric: true,
+    disablePadding: false,
+    heading: "Interest Payments",
+  },
+  {
+    key: "NetCorporateTax",
+    numeric: true,
+    disablePadding: false,
+    heading: "Net Corporate Tax",
+  },
+  {
+    key: "GDPatcurrentPrice",
+    numeric: true,
+    disablePadding: false,
+    heading: "GDP at current Price",
+  },
+  {
+    key: "CorporateTaxasofGDP",
+    numeric: true,
+    disablePadding: false,
+    heading: "Corporate Tax as % of GDP",
+  },
+];

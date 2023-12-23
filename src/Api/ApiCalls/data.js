@@ -2,7 +2,10 @@ import API from "../ApiSettings/apiEndpoints";
 import { wrappedGet } from "../ApiSettings/apiFunctions";
 
 export const getAllVariablesList = () => {
-  return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=interest,market,tax`);
+  // return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=interest,market,tax`);
+  return wrappedGet(
+    `${API.GET_ALL_VARIABLES}?variables=gdpGrowth,iip,cs,tradeBalance,inflation,market,gdp,gdpPC,gni,gniPC,debtToGDP,gnp,economicGrowth,manufacturing,tradeToGDP,exports,imports,fdi,tariff,agriculture,exchange,demographic,interest,fiscal,tax,bop`
+  );
 };
 
 export const getSelectedVariablesData = (variableString) => {
@@ -40,6 +43,36 @@ export const getCashflowData = (companyName_) => {
 export const getCompanyOverviewData = (companyName_) => {
   let companyName = "INFY";
   return wrappedGet(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getBalanceSheetDataAnnually = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getBalanceSheetDataQuaterly = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getIncomeStatementDataAnnually = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getIncomeStatementDataQuaterly = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getCashflowDataAnnually = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=CASH_FLOW&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const getCashflowDataQuaterly = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=CASH_FLOW&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
 };
 
 // export const getRatios = (companyName_) => {

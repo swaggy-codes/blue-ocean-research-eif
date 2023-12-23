@@ -4,8 +4,9 @@ import styles from "./CustomTable.module.css";
 import { GroupTags } from "../../Utils/DemoJSON";
 // import CustomTag from "../CustomTag/CustomTag";
 import { Avatar, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
+import Button from "../CustomButton/CustomButton";
 
-const CustomTable = ({ headers, data }) => {
+const CustomTable = ({ headers, data, tableHeading }) => {
   console.log(data, "data inside the custom table component");
   const matchesGroupTag = (item) => {
     // console.log(item, "itemmmmmmmmmmmmmmmmmmmmmmmmm");
@@ -40,8 +41,13 @@ const CustomTable = ({ headers, data }) => {
 
   return (
     <>
+      {/* <hr style={{ color: "white" }} />
+      <div className=''>
+        <h4>{tableHeading ? tableHeading : ""}</h4>
+      </div> */}
       <hr style={{ color: "white" }} />
-      <Box style={{ height: "80vh", border: "1px solid white", width: "100%", overflowY: "auto", paddingBottom: "5px" }}>
+
+      <Box style={{ height: "auto", border: "1px solid white", width: "100%", overflowY: "auto", paddingBottom: "5px" }}>
         <TableContainer style={{ height: "100%" }}>
           <Table className={`${styles?.tableWrapper}`}>
             <TableHead>

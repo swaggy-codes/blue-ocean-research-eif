@@ -7,6 +7,7 @@ import {
   balanceSheetDataQuaterlyINFY,
   balanceSheetDataYearlyINFY,
   companyOverviewDataINFY,
+  headingForIncomeStatementData,
 } from "../../../Utils/DemoJSON";
 import { Box } from "@mui/material";
 import Ratios from "./DIfferentViews/Ratios";
@@ -15,6 +16,7 @@ import BalanceSheetData from "./DIfferentViews/BalanceSheetData";
 import IncomeStatementData from "./DIfferentViews/IncomeStatementData";
 import CompanyOverviewData from "./DIfferentViews/CompanyOverviewData";
 import { getBalanceSheetData, getCashflowData, getCompanyOverviewData, getIncomeStatementData } from "../../../Api/ApiCalls/data";
+import CustomTable from "../../../Components/CustomTable/CustomTable";
 
 const Financial = () => {
   const [step, setStep] = useState(1);
@@ -125,6 +127,7 @@ const Financial = () => {
                 </div>
                 {step === 1 && <BalanceSheetData props={{ balanceSheetData }} />}
                 {step === 2 && <IncomeStatementData />}
+                {/* {step === 2 && <CustomTable headers={headingForIncomeStatementData} data={incomeStatementDataYearlyINFY} />} */}
                 {step === 3 && <CashFlowData />}
                 {step === 4 && <Ratios />}
                 {step === 5 && <CompanyOverviewData />}

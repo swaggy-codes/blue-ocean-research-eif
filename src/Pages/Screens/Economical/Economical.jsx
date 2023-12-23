@@ -27,6 +27,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CalculateCorrelation from "./CalculateCorrelation";
 import { getSelectedVariablesData } from "../../../Api/ApiCalls/data";
+import CustomButton from "../../../Components/CustomButton/CustomButton";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -329,25 +330,19 @@ const ScreenOne = () => {
             <Box sx={{ marginLeft: "50px" }}>
               <Box sx={{ display: "flex", justifyContent: "space-between", marginBottom: "10px" }}>
                 <Typography sx={{ fontWeight: "bold", fontSize: "h5.fontSize" }}>List of All Variables</Typography>
-                <Button
-                  variant='outlined'
-                  size='medium'
-                  sx={{ color: "white", borderColor: "white" }}
-                  onClick={() => {
+                {/* <CustomButton
+                  title={"View All"}
+                  handleFunction={() => {
                     navigate("/view-all-variables");
-                  }}>
-                  View All
-                </Button>
+                  }}
+                /> */}
                 {checked.length !== 0 && (
-                  <Button
-                    variant='outlined'
-                    size='medium'
-                    sx={{ color: "white", borderColor: "white" }}
-                    onClick={() => {
+                  <CustomButton
+                    title={"View Selected"}
+                    handleFunction={() => {
                       navigate("/view-all-variables", { state: { checked, str } });
-                    }}>
-                    View Selected
-                  </Button>
+                    }}
+                  />
                 )}
               </Box>
               <List
@@ -355,21 +350,19 @@ const ScreenOne = () => {
                 sx={{
                   width: "100%",
                   maxWidth: "auto",
-                  height: "80vh",
+                  height: "75vh",
                   bgcolor: "#020817",
                   border: 1.5,
                   borderColor: "white",
-                  borderRadius: "10px",
+                  // borderRadius: "10px",
                   // maxHeight: "500px",
                   overflowY: "auto",
                 }}>
                 {rows.map((el, i) => {
                   const labelId = `checkbox-list-label-${el}`;
-
                   {
                     /* console.log(el, "element"); */
                   }
-
                   return (
                     <ListItem
                       key={el}

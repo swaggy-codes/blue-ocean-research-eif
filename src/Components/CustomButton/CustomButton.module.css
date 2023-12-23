@@ -1,0 +1,64 @@
+.customButton {
+  background: #020817;
+  color: var(--base-white);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 10px 16px;
+  border: 1px solid white;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.customButton_Disabled {
+  background: #7a8786 !important;
+  color: var(--base-white);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* .customButton_Disabled:hover {
+   background: #7a8786;
+   color: var(--base-white);
+   font-size: 16px;
+   font-weight: 500;
+   border: none;
+   padding: 10px 16px;
+   border-radius: 6px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4px;
+ } */
+
+.hover_grey {
+  background: white;
+}
+
+.hover_grey:hover {
+  background: #f4f4f4;
+}
+
+.disable {
+  background: gray !important;
+  color: var(--base-white);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
