@@ -28,6 +28,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { getAllVariablesList, getSelectedVariablesData } from "../../../Api/ApiCalls/data";
 import CustomTable from "../../../Components/CustomTable/CustomTable";
+import AppLayout from "../../../AppLayout/AppLayout";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -367,12 +368,8 @@ const ViewAllVariables = () => {
     }
   }, [checked]);
 
-  // useEffect(() => {
-  //   fetchAllVariables();
-  // }, []);
-
   return (
-    <>
+    <AppLayout>
       <Box>
         {/* <CustomTable headers={headingForViewVariablesTable} data={allVariablesData?.data} tableHeading={"View Variables"} /> */}
         <Grid item xs={16}>
@@ -518,7 +515,7 @@ const ViewAllVariables = () => {
             <Typography>helloooooooooooooooooooo</Typography>
           </Grid> */}
       </Box>
-    </>
+    </AppLayout>
   );
 };
 

@@ -75,7 +75,23 @@ export const getCashflowDataQuaterly = (companyName_) => {
   return wrappedGet(`https://www.alphavantage.co/query?function=CASH_FLOW&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
 };
 
-// export const getRatios = (companyName_) => {
-//   let companyName = "INFY";
-//   return wrappedGet(`https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
-// };
+export const getRatios = (companyName_) => {
+  let companyName = "INFY";
+  return wrappedGet(`https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=${companyName}&apikey=BD91EULSR9NXF129`);
+};
+
+export const fetchIIFLRecommendations = () => {
+  return wrappedGet(`${API.GET_ALL_IIFL_RECOMMENDATION}`);
+};
+
+export const fetchICICIRecommendations = () => {
+  return wrappedGet(`${API.GET_ALL_ICICI_RECOMMENDATION}`);
+};
+
+export const fetchMCRecommendations = () => {
+  return wrappedGet(`${API.GET_ALL_MC_RECOMMENDATION}`);
+};
+
+export const fetchFIVEPAISARecommendations = () => {
+  return wrappedGet(`${API.GET_ALL_IIFL_RECOMMENDATION}`);
+};

@@ -17,6 +17,7 @@ import IncomeStatementData from "./DIfferentViews/IncomeStatementData";
 import CompanyOverviewData from "./DIfferentViews/CompanyOverviewData";
 import { getBalanceSheetData, getCashflowData, getCompanyOverviewData, getIncomeStatementData } from "../../../Api/ApiCalls/data";
 import CustomTable from "../../../Components/CustomTable/CustomTable";
+import AppLayout from "../../../AppLayout/AppLayout";
 
 const Financial = () => {
   const [step, setStep] = useState(1);
@@ -70,7 +71,7 @@ const Financial = () => {
   // console.log(cashFlowData?.data?.yearly?.[0], "this is a cashflow data...");
 
   return (
-    <>
+    <AppLayout>
       <Box>
         <Box sx={{ padding: "20px", paddingTop: "0px" }}>
           <div className='main mt-2'>
@@ -136,7 +137,7 @@ const Financial = () => {
           </div>
         </Box>
       </Box>
-    </>
+    </AppLayout>
   );
 };
 

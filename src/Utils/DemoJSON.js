@@ -18365,3 +18365,50 @@ export const headingForViewVariablesTable = [
     heading: "Corporate Tax as % of GDP",
   },
 ];
+
+export const recommendationsJson = [
+  {
+    Action: "BUY",
+    SL: "260",
+    TRADEPRICE: "274",
+    TARGET1: "287",
+    TARGET2: "300",
+    Name: "HINDCOPPER",
+  },
+  {
+    date: "25 January , 2024",
+    Mktcap: " 108,315",
+    Target: "64\n(17.11%)",
+    name: "Ujjivan Small Financ...",
+    LTP: " 55",
+  },
+  {
+    date: "25 January , 2024",
+    Mktcap: " 254,336",
+    Target: "1,341\n(-21.70%)",
+    name: "Motilal Oswal Financ...",
+    LTP: " 1,712",
+    overview:
+      "Motilal Oswal Financial Services Limited is an India-based integrated technology-based financial services company. The Company offers a range of services, including retail and institutional broking, financial products distribution. Its customers include resident and non-resident individuals, Hindu undivided families (HUFs), corporates, and other. Its products include intraday trading account, equity trading account, currency trading account, commodity trading account and others. The Company’s offers a diversified range of financial products and services, such as broking and distribution, institutional equities, asset management business, housing finance, private equity, private wealth management, investment banking, loan against securities and investment activities. The range of offerings under Broking and Distribution, institutional equities, investment banking, asset management, wealth management, private equity and housing finance.",
+  },
+  {
+    "Potential%": "25.43",
+    date: "08 Jan 2024",
+    CMP: "1045.60",
+    StopLoss: "NA",
+    Duration: "12-18 Month",
+    TargetPrice: "1,450.00",
+    EntryPrice: "1156.0",
+    Name: "Spandana Sphoort",
+  },
+  {
+    "Potential%": "27.51",
+    date: "26 Dec 2023",
+    CMP: "349.10",
+    StopLoss: "NA",
+    Duration: "12 Month",
+    TargetPrice: "445.00",
+    EntryPrice: "349.0",
+    Name: "Saregama India",
+  },
+];

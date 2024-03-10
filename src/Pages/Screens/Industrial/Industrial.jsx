@@ -1,6 +1,7 @@
 import { Box, Grid, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import React, { useState } from "react";
 import { industriesForScreenTwo, stagesForScreenTwo } from "../../../Utils/DemoJSON";
+import AppLayout from "../../../AppLayout/AppLayout";
 
 const Industrial = () => {
   const [companies, setCompanies] = useState([]);
@@ -16,7 +17,7 @@ const Industrial = () => {
   };
 
   return (
-    <>
+    <AppLayout>
       <Box>
         {/* <h1 style={{ color: "white" }}>Industrial</h1> */}
         <Grid container spacing={2} columns={16}>
@@ -107,7 +108,7 @@ const Industrial = () => {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </AppLayout>
   );
 };
 

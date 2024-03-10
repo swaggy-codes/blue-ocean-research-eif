@@ -28,6 +28,7 @@ import { useNavigate } from "react-router-dom";
 import CalculateCorrelation from "./CalculateCorrelation";
 import { getSelectedVariablesData } from "../../../Api/ApiCalls/data";
 import CustomButton from "../../../Components/CustomButton/CustomButton";
+import AppLayout from "../../../AppLayout/AppLayout";
 
 function createData(id, name, calories, fat, carbs, protein) {
   return {
@@ -322,7 +323,7 @@ const ScreenOne = () => {
   console.log(checked, "this is the array...", str);
 
   return (
-    <>
+    <AppLayout>
       {/* <h1 style={{ color: "white" }}>Economical</h1> */}
       <Box>
         <Grid container spacing={2} columns={16}>
@@ -330,12 +331,12 @@ const ScreenOne = () => {
             <Box sx={{ marginLeft: "50px" }}>
               <Box sx={{ display: "flex", justifyContent: "space-between", marginBottom: "10px" }}>
                 <Typography sx={{ fontWeight: "bold", fontSize: "h5.fontSize" }}>List of All Variables</Typography>
-                {/* <CustomButton
+                <CustomButton
                   title={"View All"}
                   handleFunction={() => {
                     navigate("/view-all-variables");
                   }}
-                /> */}
+                />
                 {checked.length !== 0 && (
                   <CustomButton
                     title={"View Selected"}
@@ -400,7 +401,7 @@ const ScreenOne = () => {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </AppLayout>
   );
 };
 

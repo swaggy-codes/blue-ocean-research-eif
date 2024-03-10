@@ -87,7 +87,7 @@ const Sidebar = () => {
   const handleScreenChange = (el, i) => {
     //  console.log(el, i, "of the scrrenssssss");
     if (i === 0) {
-      navigate("/");
+      navigate("/economical");
     } else if (i === 1) {
       navigate("/industrial");
     } else if (i === 2) {

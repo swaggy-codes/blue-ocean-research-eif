@@ -5,9 +5,10 @@ import { GroupTags } from "../../Utils/DemoJSON";
 // import CustomTag from "../CustomTag/CustomTag";
 import { Avatar, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import Button from "../CustomButton/CustomButton";
+import { TableLoader } from "../CustomLoader/CustomLoader";
 
-const CustomTable = ({ headers, data, tableHeading }) => {
-  console.log(data, "data inside the custom table component");
+const CustomTable = ({ headers, data, tableHeading, loader }) => {
+  console.log(data, "data inside the custom table component", headers);
   const matchesGroupTag = (item) => {
     // console.log(item, "itemmmmmmmmmmmmmmmmmmmmmmmmm");
     return GroupTags.some((tag) => tag?.name === item);
@@ -89,7 +90,7 @@ const CustomTable = ({ headers, data, tableHeading }) => {
                 ))}
             </TableBody>
           </Table>
-          {data == false || data == undefined ? (
+          {(data == false || data == undefined) && loader === false ? (
             <p
               style={{
                 display: "flex",
@@ -100,6 +101,13 @@ const CustomTable = ({ headers, data, tableHeading }) => {
               }}>
               No record found
             </p>
+          ) : (
+            ""
+          )}
+          {loader ? (
+            <Box sx={{ margin: "10px" }}>
+              <TableLoader />
+            </Box>
           ) : (
             ""
           )}

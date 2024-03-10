@@ -4,18 +4,19 @@ import Economical from "../Pages/Screens/Economical/Economical";
 import Industrial from "../Pages/Screens/Industrial/Industrial";
 import Financial from "../Pages/Screens/Financial/Financial";
 import ViewAllVariables from "../Pages/Screens/Economical/ViewAllVariables";
+import Home from "../Pages/Home/Home";
+import RecommendationsModule from "../Pages/RecommendationsModule/RecommendationsModule";
 
 const MainRouter = () => {
   return (
-    <>
-      <Routes>
-        <Route exact path='/' element={<Economical />} />
-        <Route path='/economical' element={<Economical />} />
-        <Route path='/view-all-variables' element={<ViewAllVariables />} />
-        <Route path='/industrial' element={<Industrial />} />
-        <Route path='/financial' element={<Financial />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route exact path='/' element={<Economical />} />
+      <Route path='/economical' element={<Economical />} />
+      <Route path='/view-all-variables' element={<ViewAllVariables />} />
+      <Route path='/industrial' element={<Industrial />} />
+      <Route path='/financial' element={<Financial />} />
+      <Route path='/recommendations' element={<RecommendationsModule />} />
+    </Routes>
   );
 };
 

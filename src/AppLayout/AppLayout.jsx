@@ -122,11 +122,13 @@ const AppLayout = ({ children }) => {
   const handleScreenChange = (el, i) => {
     //  console.log(el, i, "of the scrrenssssss");
     if (i === 0) {
-      navigate("/");
+      navigate("/economical");
     } else if (i === 1) {
       navigate("/industrial");
     } else if (i === 2) {
       navigate("/financial");
+    } else if (i === 3) {
+      navigate("/recommendations");
     }
   };
 
@@ -159,7 +161,7 @@ const AppLayout = ({ children }) => {
         </DrawerHeader>
         <Divider />
         <List sx={{ bgcolor: "#020817", color: "white" }}>
-          {["Economical", "Industrial", "Financial"].map((el, i) => (
+          {["Economical", "Industrial", "Financial", "Recommendations"].map((el, i) => (
             <ListItem
               key={el}
               disablePadding
@@ -171,6 +173,7 @@ const AppLayout = ({ children }) => {
                   {i === 0 ? <QueryStatsIcon sx={{ color: "white" }} /> : ""}
                   {i === 1 ? <StackedBarChartIcon sx={{ color: "white" }} /> : ""}
                   {i === 2 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
+                  {i === 3 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
                 </ListItemIcon>
                 <ListItemText primary={el} />
               </ListItemButton>
