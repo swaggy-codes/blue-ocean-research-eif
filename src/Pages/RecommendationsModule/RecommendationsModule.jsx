@@ -22,7 +22,13 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "../../Components/CustomTable/CustomTable.module.css";
 import CustomTable from "../../Components/CustomTable/CustomTable";
-import { fetchFIVEPAISARecommendations, fetchICICIRecommendations, fetchIIFLRecommendations, fetchMCRecommendations } from "../../Api/ApiCalls/data";
+import {
+  fetchFIVEPAISARecommendations,
+  fetchICICIRecommendations,
+  fetchIIFLRecommendations,
+  fetchMCRecommendations,
+  fetchSBIRecommendations,
+} from "../../Api/ApiCalls/data";
 import AppLayout from "../../AppLayout/AppLayout";
 import { TableLoader } from "../../Components/CustomLoader/CustomLoader";
 
@@ -133,8 +139,10 @@ const RecommendationsModule = () => {
 
       const res4 = await fetchFIVEPAISARecommendations();
 
+      const res5 = await fetchSBIRecommendations();
+
       if (res?.status === 200 && res3?.status === 200 && res4?.status === 200) {
-        setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data], loading: false });
+        setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...res5?.data], loading: false });
       }
 
       if (res2?.status === 200) {

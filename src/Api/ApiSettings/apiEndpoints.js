@@ -14,6 +14,7 @@ const API = {
   GET_ALL_MC_RECOMMENDATION: API_BASE_URL + "/recom/mc",
   GET_ALL_ICICI_RECOMMENDATION: API_BASE_URL + "/recom/icici",
   GET_ALL_FIVEPAISA_RECOMMENDATION: API_BASE_URL + "/recom/5paisa",
+  GET_ALL_SBI_RECOMMENDATION: API_BASE_URL + "/recom/sbi",
 };
 
 export default API;

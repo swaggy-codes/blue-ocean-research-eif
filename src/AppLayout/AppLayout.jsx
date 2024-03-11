@@ -33,6 +33,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InfoIcon from "@mui/icons-material/Info";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import RecommendIcon from "@mui/icons-material/Recommend";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import PriceChangeIcon from "@mui/icons-material/PriceChange";
 import StackedBarChartIcon from "@mui/icons-material/StackedBarChart";
@@ -129,6 +131,8 @@ const AppLayout = ({ children }) => {
       navigate("/financial");
     } else if (i === 3) {
       navigate("/recommendations");
+    } else if (i === 4) {
+      navigate("/investors");
     }
   };
 
@@ -161,7 +165,7 @@ const AppLayout = ({ children }) => {
         </DrawerHeader>
         <Divider />
         <List sx={{ bgcolor: "#020817", color: "white" }}>
-          {["Economical", "Industrial", "Financial", "Recommendations"].map((el, i) => (
+          {["Economical", "Industrial", "Financial", "Recommendations", "Investors Module"].map((el, i) => (
             <ListItem
               key={el}
               disablePadding
@@ -173,7 +177,8 @@ const AppLayout = ({ children }) => {
                   {i === 0 ? <QueryStatsIcon sx={{ color: "white" }} /> : ""}
                   {i === 1 ? <StackedBarChartIcon sx={{ color: "white" }} /> : ""}
                   {i === 2 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
-                  {i === 3 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
+                  {i === 3 ? <RecommendIcon sx={{ color: "white" }} /> : ""}
+                  {i === 4 ? <PersonOutlineIcon sx={{ color: "white" }} /> : ""}
                 </ListItemIcon>
                 <ListItemText primary={el} />
               </ListItemButton>
