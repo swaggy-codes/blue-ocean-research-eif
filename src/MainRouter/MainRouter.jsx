@@ -7,6 +7,7 @@ import ViewAllVariables from "../Pages/Screens/Economical/ViewAllVariables";
 import Home from "../Pages/Home/Home";
 import RecommendationsModule from "../Pages/RecommendationsModule/RecommendationsModule";
 import InvestorsModule from "../Pages/InvestorsModule/InvestorsModule";
+import GlobalModule from "../Pages/GlobalModule/GlobalModule";
 
 const MainRouter = () => {
   return (
@@ -18,6 +19,7 @@ const MainRouter = () => {
       <Route path='/financial' element={<Financial />} />
       <Route path='/recommendations' element={<RecommendationsModule />} />
       <Route path='/investors' element={<InvestorsModule />} />
+      <Route path='/global' element={<GlobalModule />} />
     </Routes>
   );
 };
