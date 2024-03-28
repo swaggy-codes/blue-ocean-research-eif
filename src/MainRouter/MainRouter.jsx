@@ -8,6 +8,7 @@ import Home from "../Pages/Home/Home";
 import RecommendationsModule from "../Pages/RecommendationsModule/RecommendationsModule";
 import InvestorsModule from "../Pages/InvestorsModule/InvestorsModule";
 import GlobalModule from "../Pages/GlobalModule/GlobalModule";
+import InvestorViewPage from "../Pages/InvestorsModule/InvestorViewPage";
 
 const MainRouter = () => {
   return (
@@ -19,6 +20,7 @@ const MainRouter = () => {
       <Route path='/financial' element={<Financial />} />
       <Route path='/recommendations' element={<RecommendationsModule />} />
       <Route path='/investors' element={<InvestorsModule />} />
+      <Route path='/investor-view' element={<InvestorViewPage />} />
       <Route path='/global' element={<GlobalModule />} />
     </Routes>
   );
