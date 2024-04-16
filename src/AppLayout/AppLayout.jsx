@@ -39,6 +39,7 @@ import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import PriceChangeIcon from "@mui/icons-material/PriceChange";
 import StackedBarChartIcon from "@mui/icons-material/StackedBarChart";
 import PublicIcon from "@mui/icons-material/Public";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import styles from "./AppLayout.module.css";
@@ -136,6 +137,8 @@ const AppLayout = ({ children }) => {
       navigate("/investors");
     } else if (i === 5) {
       navigate("/global");
+    } else if (i === 6) {
+      navigate("/telegram-recommendations");
     }
   };
 
@@ -168,7 +171,7 @@ const AppLayout = ({ children }) => {
         </DrawerHeader>
         <Divider />
         <List sx={{ bgcolor: "#020817", color: "white" }}>
-          {["Economical", "Industrial", "Financial", "Recommendations", "Investors Module", "Global Module"].map((el, i) => (
+          {["Economical", "Industrial", "Financial", "Recommendations", "Investors Module", "Global Module", "Telegram"].map((el, i) => (
             <ListItem
               key={el}
               disablePadding
@@ -183,6 +186,7 @@ const AppLayout = ({ children }) => {
                   {i === 3 ? <RecommendIcon sx={{ color: "white" }} /> : ""}
                   {i === 4 ? <PersonOutlineIcon sx={{ color: "white" }} /> : ""}
                   {i === 5 ? <PublicIcon sx={{ color: "white" }} /> : ""}
+                  {i === 6 ? <TelegramIcon sx={{ color: "white" }} /> : ""}
                 </ListItemIcon>
                 <ListItemText primary={el} />
               </ListItemButton>

@@ -46,6 +46,11 @@ const InvestorsModule = () => {
                       borderRadius: 4,
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                       marginBottom: "8px",
+                      cursor: "pointer",
+                      "&:hover": {
+                        transform: "scale(.97)",
+                        borderRadius: 4,
+                      },
                     }}>
                     <CardContent sx={{ display: "flex", flexDirection: "row", alignItems: "center", paddingBottom: "10px !important" }}>
                       <div style={{ flex: 2, paddingRight: "16px" }}>
@@ -82,6 +87,12 @@ const InvestorsModule = () => {
                       borderRadius: 4,
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                       marginBottom: "8px",
+                      transition: "transform 0.3s ease",
+                      cursor: "pointer",
+                      "&:hover": {
+                        transform: "scale(.97)",
+                        borderRadius: 4,
+                      },
                     }}>
                     <CardContent sx={{ display: "flex", flexDirection: "row", alignItems: "center", paddingBottom: "10px !important" }}>
                       <div style={{ flex: 2, paddingRight: "16px" }}>

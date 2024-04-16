@@ -5,6 +5,7 @@ import Overview from "./InvestorViewSubHeadings/Overview";
 import Holdings from "./InvestorViewSubHeadings/Holdings";
 import BulkBlockDeals from "./InvestorViewSubHeadings/BulkBlockDeals";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import InsiderSAST from "./InvestorViewSubHeadings/InsiderSAST";
 
 const InvestorViewPage = () => {
   const [step, setStep] = useState(1);
@@ -57,11 +58,21 @@ const InvestorViewPage = () => {
                     Bulk/Block Deals
                   </button>
                 </li>
+                <li className='nav-item'>
+                  <button
+                    className={(step === 4 && "nav-link active") || "nav-link text-white"}
+                    onClick={() => {
+                      setStep(4);
+                    }}>
+                    Insider/SAST
+                  </button>
+                </li>
               </ul>
             </div>
             {step === 1 && <Overview data={state} />}
             {step === 2 && <Holdings data={state?.holdings} />}
             {step === 3 && <BulkBlockDeals data={state?.bulkBlockDeals} />}
+            {step === 4 && <InsiderSAST data={state.freshEntryAndExit} />}
           </div>
         </div>
       </div>

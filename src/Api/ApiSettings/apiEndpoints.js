@@ -15,6 +15,9 @@ const API = {
   GET_ALL_ICICI_RECOMMENDATION: API_BASE_URL + "/recom/icici",
   GET_ALL_FIVEPAISA_RECOMMENDATION: API_BASE_URL + "/recom/5paisa",
   GET_ALL_SBI_RECOMMENDATION: API_BASE_URL + "/recom/sbi",
+  GET_TELEGRAM_DATA: API_BASE_URL + "/recom/tel",
+
+  DEMO_LOG_IN: `http://3.110.48.67:8080/verify/email/opt`,
 };
 
 export default API;

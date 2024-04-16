@@ -49,7 +49,7 @@ function Row(props) {
           {row.MktCap || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.LTP || "N/A"}
+          {row.ltp || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
           {row.Target || "N/A"}
@@ -83,28 +83,28 @@ const tableHeaders = [
     key: "name",
     numeric: false,
     disablePadding: false,
-    heading: "Fiscal Date Ending",
+    heading: "Name",
   },
   {
-    key: "Buy",
+    key: "buy",
     numeric: false,
     disablePadding: false,
     heading: "Buy",
   },
   {
-    key: "Sell",
+    key: "sell",
     numeric: false,
     disablePadding: false,
     heading: "Sell",
   },
   {
-    key: "Hold",
+    key: "hold",
     numeric: false,
     disablePadding: false,
     heading: "Hold",
   },
   {
-    key: "Total",
+    key: "total",
     numeric: false,
     disablePadding: false,
     heading: "Total",
@@ -134,17 +134,13 @@ const RecommendationsModule = () => {
     try {
       const res = await fetchIIFLRecommendations();
       const res2 = await fetchMCRecommendations();
-
       const res3 = await fetchICICIRecommendations();
-
       const res4 = await fetchFIVEPAISARecommendations();
-
       const res5 = await fetchSBIRecommendations();
 
       if (res?.status === 200 && res3?.status === 200 && res4?.status === 200) {
         setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...res5?.data], loading: false });
       }
-
       if (res2?.status === 200) {
         setMcResponse({ data: res2?.data, loading: false });
       }

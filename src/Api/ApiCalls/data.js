@@ -1,5 +1,5 @@
 import API from "../ApiSettings/apiEndpoints";
-import { wrappedGet } from "../ApiSettings/apiFunctions";
+import { wrappedFetch, wrappedGet } from "../ApiSettings/apiFunctions";
 
 export const getAllVariablesList = () => {
   // return wrappedGet(`${API.GET_ALL_VARIABLES}?variables=interest,market,tax`);
@@ -98,4 +98,16 @@ export const fetchFIVEPAISARecommendations = () => {
 
 export const fetchSBIRecommendations = () => {
   return wrappedGet(`${API.GET_ALL_SBI_RECOMMENDATION}`);
+};
+
+export const posLogInDemo = (data) => {
+  return wrappedFetch(`${API.DEMO_LOG_IN}`, "post", data);
+};
+
+export const getDemo = () => {
+  return wrappedFetch(`http://3.110.48.67:8080/get/sectors`, "get");
+};
+
+export const fetchTelegramData = (data) => {
+  return wrappedFetch(`${API.GET_TELEGRAM_DATA}`, "get");
 };

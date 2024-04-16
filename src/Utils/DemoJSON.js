@@ -18628,3 +18628,958 @@ export const investorsModuleDemoJson = [
     ],
   },
 ];
+
+export const telegramData = [
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+  {
+    grpName: "Stock Gainers (SEBI REGISTERED)",
+    subscribers: "113998",
+    messages: [
+      {
+        message: "\\xf0\\x9f\\x8c\\x99",
+        views: "3713",
+      },
+      {
+        message:
+          "**Disclaimer**: - \\xf0\\x9f\\x9b\\x91\\nStock Gainers is a SEBI Registered RA Channel, owned by Kapil Verma, nowadays we have seen many fake channels opened in the name of Stock Gainers and they are __demanding/offer for premium services, PMS services, and some money double schemes. __\\n\\n__They are big scammers,__ Please don't pay blindly to anyone, if you will pay to the wrong platform/scammers then only you will be responsible for your loss/profit. There is nothing like guaranteed returns or sure-shot profits. Stay Away from analysts who misguide and give false hopes to you by using terms like assured returns and high accuracy. Moreover, interested members who want to join our Prime membership first check our __SEBI Registration and then pay.__\\n\\nRegards\\n**KAPIL VERMA**, \\nSEBI REGISTERED RA No: **INH100007879**\\n\\n\\nFOR QUERIES Or Any Payment Related Info. Our Only Official Id Is @SG005\\n\\nWe ACCEPT PAYMENTS ONLY THROUGH RIGI\\n\\n**Note**: ALL OUR BUY SELL, Calls Are just for education purpose only. Profits are calculated based on defined lot size for all trades.",
+        views: "6966",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x8c\\x9fLive Analysis of 10th APRIL\\n\\n1. OPTION ANALYSIS\\n\\nTATA POWER 430CE 16 TO  18.80\\xf0\\x9f\\x94\\xa5\\nTRENT  4100CE 118 TO 145\\xf0\\x9f\\x94\\xa5\\nNMDC  240CE 10.75 TO  9\\xe2\\x9e\\x96\\nHINDPETRO 489CE 18 TO 20.60\\xf0\\x9f\\x94\\xa5\\n\\n\\n2. STOCK FUTURE & EQUITY CASH ANALYSIS\\n\\n BEL 232 TO 232.85\\xf0\\x9f\\x94\\xa5\\n\\n3. CHART ANALYSIS\\n\\nTATA POWER \\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nBHEL\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nPETRONET LNG\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nMCX\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nCOAL INDIA\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nSUN TV\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTATA CHEM\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nTRENT\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\nEICHER MOTOR\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\n\\n\\n\\nNote: Those who are tracking our Live Analysis please read our disclaimer.\\n\\nFocus On the Right Analysis\\n\\n        FOR PRIME MEMBERSHIP\\n                  PING @SG005\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "7246",
+      },
+      {
+        message: "EICHERMOTOR  BREAKOUT\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x94\\xa5",
+        views: "10149",
+      },
+      {
+        message:
+          "option view**\\n\\nhindpetro 480 ce\\n\\ncmp 18-19\\n\\n\\n\\nSUPPORT 14\\n\\nVIEW 22\\n\\n\\n**\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10947",
+      },
+      {
+        message: "NMDC \\n\\nCHART",
+        views: "11990",
+      },
+      {
+        message:
+          "**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "10907",
+      },
+      {
+        message: "OPTION VIEW\\n\\nNMDC 240CE\\n\\nCMP 10.75\\n\\nSUPPORT 9\\n\\nVIEW 12-14",
+        views: "10492",
+      },
+      {
+        message:
+          "POSITIVE TRADES - NEGATIVE TRADES \\nBOTH GO HAND IN HAND\\n\\nLIKE SAID BEFORE, NOTHING IS SURE SHOT IN STOCK MARKET\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10245",
+      },
+      {
+        message: "ONE GOOD OPTION \\n\\nTRENT 4100CE\\n\\n118 to 145 \\xf0\\x9f\\x94\\xa5",
+        views: "9652",
+      },
+      {
+        message:
+          "**JOURNEY from Before Joining STOCK GAINERS PRIME TO\\nPOST JOINING STOCK GAINERS**\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x92\\xaa\\n\\nKEEP THE SAME STREAK ON\\xf0\\x9f\\x91\\x8f\\xf0\\x9f\\x91\\x8f",
+        views: "9319",
+      },
+      {
+        message: "TRENT\\n\\nCHART \\n\\nAbove 4100\\n\\nSolid upside expected",
+        views: "9680",
+      },
+      {
+        message: "suntv",
+        views: "10367",
+      },
+      {
+        message: "TATACHEM BREAKOUT AT RETEST\\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "11711",
+      },
+      {
+        message: "suntv break out",
+        views: "12226",
+      },
+      {
+        message: "COALINDIA  BREAKOUT  \\n\\nTRADE FROM SUPPORT \\n\\nTRADE FROM BOTTOM \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "12245",
+      },
+      {
+        message: "MCX \\n\\n\\xf0\\x9f\\x94\\xa5 \\xf0\\x9f\\x94\\xa5",
+        views: "11962",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "6177",
+      },
+      {
+        message: "MCX\\n\\nBREAKOUT WITH STRONG VOLUMES",
+        views: "5855",
+      },
+      {
+        message: "BREAKOUT \\n\\nPETRONET LNG",
+        views: "11005",
+      },
+      {
+        message: "**TO START THE DAY WITH **\\xe2\\x9c\\x94\\xef\\xb8\\x8f\\xe2\\x9c\\x94\\xef\\xb8\\x8f",
+        views: "10590",
+      },
+      {
+        message:
+          "Cash  view**\\n\\nBel 232++\\n\\n\\n\\nSUPPORT 220\\n\\nVIEW 240\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11190",
+      },
+      {
+        message: "BHEL\\n\\nBREAKOUT \\xf0\\x9f\\x94\\xa5\\xf0\\x9f\\x9a\\x80",
+        views: "10984",
+      },
+      {
+        message:
+          "**OPTION VIEW\\n\\nTatapower 430 ce\\n\\nCMP 16-17\\n\\nSUPPORT 12\\n\\nVIEW 22,26\\n\\n\\nHOLDING VIEW **\\n\\n\\n**Holding\\nDisclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.z**",
+        views: "11663",
+      },
+      {
+        message: "Tatapower breakout",
+        views: "11044",
+      },
+      {
+        message:
+          "\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "12794",
+      },
+    ],
+  },
+];
