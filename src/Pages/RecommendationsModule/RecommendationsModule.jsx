@@ -31,6 +31,7 @@ import {
 } from "../../Api/ApiCalls/data";
 import AppLayout from "../../AppLayout/AppLayout";
 import { TableLoader } from "../../Components/CustomLoader/CustomLoader";
+import moment from "moment";
 
 function Row(props) {
   const { row } = props;
@@ -46,13 +47,13 @@ function Row(props) {
           <p className='m-0'>{row?.date || "Date not available"}</p>
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.MktCap || "N/A"}
+          {row?.date || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.ltp || "N/A"}
+          {row.ltp || row.cmp || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.Target || "N/A"}
+          {row.target || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
           <IconButton sx={{ fontFamily: "Roboto Slab", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
@@ -139,7 +140,25 @@ const RecommendationsModule = () => {
       const res5 = await fetchSBIRecommendations();
 
       if (res?.status === 200 && res3?.status === 200 && res4?.status === 200) {
-        setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...res5?.data], loading: false });
+        const convertArrayToFormat = (dataArray) => {
+          return dataArray.map((item) => {
+            console.log(item, "conversion array...");
+            return {
+              name: item?.name !== "" ? `${item.name.split("<")?.[0]}` : "N/A",
+              // source: source,
+            };
+          });
+        };
+
+        const sbiBackUp = convertArrayToFormat(res5?.data);
+        // const iiflBackUp = convertArrayToFormat(res?.data, "IIFL");
+
+        // const iciciiBackUp = convertArrayToFormat(res3?.data, "ICICI");
+
+        // const fivePaisaBackUp = convertArrayToFormat(res5?.data, "5 PAISA");
+
+        console.log(sbiBackUp, "this is the sbiiiiiiiii");
+        setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...sbiBackUp], loading: false });
       }
       if (res2?.status === 200) {
         setMcResponse({ data: res2?.data, loading: false });
@@ -201,14 +220,17 @@ const RecommendationsModule = () => {
                   <TableRow sx={{ fontFamily: "Roboto Slab", color: "white" }}>
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>Name</TableCell>
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-                      Market Cap.
+                      Date
                     </TableCell>
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-                      LTP
+                      LTP/CMP
                     </TableCell>
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
                       Target
                     </TableCell>
+                    {/* <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                      Source
+                    </TableCell> */}
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} />
                   </TableRow>
                 </TableHead>
