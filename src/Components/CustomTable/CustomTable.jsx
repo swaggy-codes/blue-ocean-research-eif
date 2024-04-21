@@ -7,7 +7,7 @@ import { Avatar, Box, Table, TableBody, TableCell, TableContainer, TableHead, Ta
 import Button from "../CustomButton/CustomButton";
 import { TableLoader } from "../CustomLoader/CustomLoader";
 
-const CustomTable = ({ headers, data, tableHeading, loader }) => {
+const CustomTable = ({ headers, data, tableHeading, loader, height }) => {
   console.log(data, "data inside the custom table component", headers);
   const matchesGroupTag = (item) => {
     // console.log(item, "itemmmmmmmmmmmmmmmmmmmmmmmmm");
@@ -48,7 +48,7 @@ const CustomTable = ({ headers, data, tableHeading, loader }) => {
       </div> */}
       <hr style={{ color: "white" }} />
 
-      <Box style={{ height: "auto", border: "1px solid white", width: "100%", overflowY: "auto", paddingBottom: "5px" }}>
+      <Box style={{ height: height ? height : "auto", border: "1px solid white", width: "100%", overflowY: "auto", paddingBottom: "5px" }}>
         <TableContainer style={{ height: "100%" }}>
           <Table className={`${styles?.tableWrapper}`}>
             <TableHead>

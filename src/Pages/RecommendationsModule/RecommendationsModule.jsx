@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { recommendationsJson } from "../../Utils/DemoJSON";
+import { recommendationsJson, responseFivePaisa, responseICICI, responseIIFL, responseMoneyControl10Stocks, responseSBI } from "../../Utils/DemoJSON";
 import Header from "../../Components/Header/Header";
 import {
   Box,
@@ -34,8 +34,10 @@ import { TableLoader } from "../../Components/CustomLoader/CustomLoader";
 import moment from "moment";
 
 function Row(props) {
-  const { row } = props;
+  const { row, fullData } = props;
   const [open, setOpen] = React.useState(false);
+
+  console.log(fullData, "work on this");
 
   return (
     <React.Fragment>
@@ -54,6 +56,9 @@ function Row(props) {
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
           {row.target || "N/A"}
+        </TableCell>
+        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+          {row.source || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
           <IconButton sx={{ fontFamily: "Roboto Slab", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
@@ -121,10 +126,20 @@ const samllTableRecommendationData = [
 ];
 
 const RecommendationsModule = () => {
-  console.log(recommendationsJson, "this is recommendation json");
+  const convertArrayToFormat = (dataArray) => {
+    return dataArray.map((item) => {
+      console.log(item, "conversion array...");
+      return {
+        name: item?.name !== "" ? `${item.name.split("<")?.[0]}` : "N/A",
+        source: item?.name,
+      };
+    });
+  };
+  const sbiBackUpTwo = convertArrayToFormat(responseSBI);
+  // console.log(recommendationsJson, "this is recommendation json");
 
-  const [allRecom, setAllRecom] = useState({ data: [], loading: false });
-  const [mcResponse, setMcResponse] = useState({ data: [], loading: true });
+  const [allRecom, setAllRecom] = useState({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
+  const [mcResponse, setMcResponse] = useState({ data: responseMoneyControl10Stocks, loading: false });
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
@@ -151,6 +166,8 @@ const RecommendationsModule = () => {
         };
 
         const sbiBackUp = convertArrayToFormat(res5?.data);
+        const sbiBackUpTwo = convertArrayToFormat(responseSBI);
+
         // const iiflBackUp = convertArrayToFormat(res?.data, "IIFL");
 
         // const iciciiBackUp = convertArrayToFormat(res3?.data, "ICICI");
@@ -159,6 +176,7 @@ const RecommendationsModule = () => {
 
         console.log(sbiBackUp, "this is the sbiiiiiiiii");
         setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...sbiBackUp], loading: false });
+        // setAllRecom({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
       }
       if (res2?.status === 200) {
         setMcResponse({ data: res2?.data, loading: false });
@@ -191,10 +209,10 @@ const RecommendationsModule = () => {
   const paginatedData = finalArray.slice(startIndex, endIndex);
 
   useEffect(() => {
-    fetchRecommndations();
+    // fetchRecommndations();
   }, []);
 
-  console.log(finalArray, "these are the recommendations");
+  console.log(finalArray, "these are the recommendations", responseMoneyControl10Stocks);
 
   return (
     <AppLayout>
@@ -209,7 +227,7 @@ const RecommendationsModule = () => {
           <hr style={{ color: "white" }} />
           <div className='col-4 ps-0'>
             <h5>What to do with these stocks?</h5>
-            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} />
+            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} height={"auto"} />
           </div>
           <div className='col-8 pe-0'>
             <h5>Recommended Stocks</h5>
@@ -228,16 +246,16 @@ const RecommendationsModule = () => {
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
                       Target
                     </TableCell>
-                    {/* <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
                       Source
-                    </TableCell> */}
+                    </TableCell>
                     <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} />
                   </TableRow>
                 </TableHead>
                 <TableBody sx={{ fontFamily: "Roboto Slab", color: "white" }}>
                   {paginatedData?.map((row) => {
                     console.log(row, "thisd");
-                    return <Row key={row.name} row={row} sx={{ fontFamily: "Roboto Slab", color: "white" }} />;
+                    return <Row key={row.name} row={row} fullData={finalArray} sx={{ fontFamily: "Roboto Slab", color: "white" }} />;
                   })}
                 </TableBody>
               </Table>

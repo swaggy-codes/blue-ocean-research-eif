@@ -93,7 +93,7 @@ export const fetchMCRecommendations = () => {
 };
 
 export const fetchFIVEPAISARecommendations = () => {
-  return wrappedGet(`${API.GET_ALL_IIFL_RECOMMENDATION}`);
+  return wrappedGet(`${API.GET_ALL_FIVEPAISA_RECOMMENDATION}`);
 };
 
 export const fetchSBIRecommendations = () => {

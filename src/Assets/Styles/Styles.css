@@ -83,6 +83,29 @@ input {
   width: 250px;
 }
 
+.calender_field {
+  background-image: url(../images/calendar.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center !important;
+  /* margin-right: 30px; */
+}
+
+.form-control.custom-form-control,
+.flatpickr-input {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a1a0a3;
+  padding: 10px 10px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-control.custom-form-control::-webkit-input-placeholder,
+.flatpickr-input::-webkit-input-placeholder {
+  color: #3f3f3f;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 600px) {
   .landing-page {
