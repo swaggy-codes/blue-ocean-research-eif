@@ -7,25 +7,27 @@ import AppLayout from "../../AppLayout/AppLayout";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { fetchTelegramData, getDemo, posLogInDemo } from "../../Api/ApiCalls/data";
+import { fetchTelegramData, fetchTelegramDataWithDateRange, getDemo, posLogInDemo } from "../../Api/ApiCalls/data";
 import { TableLoader } from "../../Components/CustomLoader/CustomLoader";
 import moment from "moment";
 
 const TelegramModule = () => {
   const [telegramRecom, setTelegramRecom] = useState({ data: telegramData, loading: false });
+  // const [telegramRecom, setTelegramRecom] = useState({ data: [], loading: false });
+
   const [messagesGroup, setMessagesGroup] = useState(telegramRecom?.data?.[0]);
-  const [teleParams, setTeleParams] = useState({ dateRange: { from: "", to: "", difference: "" }, search: "" });
+  const [teleParams, setTeleParams] = useState({ dateRange: { from: 0, to: 0, difference: "" }, search: "" });
 
   const handleViewGroupRecom = (el) => {
     console.log(el, "this is the group to view messages");
     setMessagesGroup(el);
   };
 
-  console.log(teleParams?.dateRange, "this is the telgram data...");
+  // console.log(teleParams?.dateRange, "this is the telgram data...");
   const getTeleRecom = async () => {
     setTelegramRecom((v) => ({ ...v, loading: true }));
     try {
-      const res = await Promise.resolve(fetchTelegramData());
+      const res = await Promise.resolve(fetchTelegramDataWithDateRange(teleParams?.dateRange?.from, teleParams?.dateRange?.to - 1));
       if (res?.status === 200) {
         setTelegramRecom(() => ({ data: res?.data, loading: false }));
       }
@@ -229,12 +231,16 @@ const ViewGroupRecomComponent = ({ props }) => {
                 }}>
                 <div style={{ flex: 2, paddingRight: "16px", marginBottom: "16px", maxWidth: "90%" }}>
                   <div style={{ marginBottom: "8px", textAlign: "left" }}>
-                    <Typography variant='6'>{messageStringFormatted}</Typography>
+                    <Typography variant='6' style={{ whiteSpace: "pre-wrap" }}>
+                      {messageStringFormatted}
+                    </Typography>
+                    {/* <Typography variant='6'>{"messageStringFormatted"}</Typography> */}
                   </div>
                 </div>
                 <div style={{ position: "absolute", bottom: 4, right: 12 }}>
-                  <Typography variant='6' style={{ position: "relative", top: "2px", right: "25px" }}>
-                    {moment(new Date()).format("llll")}
+                  <Typography variant='6' style={{ position: "relative", top: "2px", right: "25px", whiteSpace: "pre-wrap" }}>
+                    {/* {moment(new Date()).format("llll")} */}
+                    {el?.date}
                   </Typography>
                   <VisibilityIcon sx={{ color: "white", position: "relative", right: "16px" }} />
                   <span style={{ position: "relative", top: "2px", right: "10px" }}>{formatViewsCount(el?.views)}</span>

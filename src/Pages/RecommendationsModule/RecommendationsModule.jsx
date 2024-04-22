@@ -138,7 +138,9 @@ const RecommendationsModule = () => {
   const sbiBackUpTwo = convertArrayToFormat(responseSBI);
   // console.log(recommendationsJson, "this is recommendation json");
 
-  const [allRecom, setAllRecom] = useState({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
+  const [allRecom, setAllRecom] = useState({ data: [], loading: false });
+
+  // const [allRecom, setAllRecom] = useState({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
   const [mcResponse, setMcResponse] = useState({ data: responseMoneyControl10Stocks, loading: false });
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -179,7 +181,7 @@ const RecommendationsModule = () => {
         // setAllRecom({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
       }
       if (res2?.status === 200) {
-        setMcResponse({ data: res2?.data, loading: false });
+        // setMcResponse({ data: res2?.data, loading: false  });
       }
 
       // console.log(res2, "responseeeeeee");
@@ -209,7 +211,7 @@ const RecommendationsModule = () => {
   const paginatedData = finalArray.slice(startIndex, endIndex);
 
   useEffect(() => {
-    // fetchRecommndations();
+    fetchRecommndations();
   }, []);
 
   console.log(finalArray, "these are the recommendations", responseMoneyControl10Stocks);
