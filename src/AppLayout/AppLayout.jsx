@@ -205,7 +205,7 @@ const AppLayout = ({ children }) => {
           ))}
         </List>
       </Drawer>
-      <Box component='main' sx={{ flexGrow: 1, p: 3, bgcolor: "#020817", color: "white", width: "500px", height: "100vh" }}>
+      <Box component='main' sx={{ flexGrow: 1, p: 3, bgcolor: "#020817", color: "white", width: "500px", height: "100%" }}>
         <DrawerHeader />
         {children}
       </Box>

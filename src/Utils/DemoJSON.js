@@ -18632,405 +18632,462 @@ export const investorsModuleDemoJson = [
 export const telegramData = [
   {
     grpName: "SharesNservices.com™ (SEBI REGISTERED RESEARCH ANALYST’S SITE)",
-    subscribers: "27362",
+    subscribers: "26965",
     messages: [],
   },
   {
     grpName: "Stock Gainers (SEBI REGISTERED)",
-    subscribers: "114826",
+    subscribers: "114907",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nRATEGAIN\\n\\nCMP 699-700\\n\\nSUPPORT 680\\n\\nVIEW 720-740\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.*",
-        views: "7512",
+          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nRATEGAIN\\n\\nCMP 699-700\\n\\nSUPPORT 680\\n\\nVIEW 720-740\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**",
+        views: "9870",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbf**EQUITY PICK \\n\\nASAL\\n\\n878 to 900\\n\\n20 points view achieved \\n\\nBack to back \\n4 Equity Pick \\n\\nVIEW Achieved **\\n\\nHope all enjoye",
-        views: "7484",
+          "\\xef\\xbb\\xbf**EQUITY PICK \\n\\nASAL\\n\\n878 to 900\\n\\n20 points view achieved \\n\\nBack to back \\n4 Equity Pick \\n\\nVIEW Achieved **\\n\\nHope all enjoyed",
+        views: "10146",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nASAL\\n\\nCMP 878\\n\\nSUPPORT 858\\n\\nVIEW 900-920\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.*",
-        views: "7480",
+          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nASAL\\n\\nCMP 878\\n\\nSUPPORT 858\\n\\nVIEW 900-920\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**",
+        views: "9561",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfEquity Pick \\n\\nWABAG\\n\\n970 to 1000\\n\\nVIEW achieved \\n\\n30 point",
-        views: "8184",
+        message: "\\xef\\xbb\\xbfEquity Pick \\n\\nWABAG\\n\\n970 to 1000\\n\\nVIEW achieved \\n\\n30 points",
+        views: "10568",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfEquity Pick\\n\\nTD POWER SYSTEM \\n\\n320 to 330\\n\\nView achieved \\n10 point",
-        views: "8110",
-      },
-      {
-        date: "22-4-2024",
-        message:
-          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nWABAG\\n\\nCMP 965-970\\n\\nSUPPORT 940\\n\\nVIEW 1000*1020\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.*",
-        views: "8465",
-      },
-      {
-        date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfEQUITY PICK \\n\\nMANORAMA \\n\\n605 to 625\\n\\nVIEW achieved \\n\\n20 point",
-        views: "8269",
+        message: "\\xef\\xbb\\xbfEquity Pick\\n\\nTD POWER SYSTEM \\n\\n320 to 330\\n\\nView achieved \\n10 points",
+        views: "10455",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nTD POWER SYSTEM \\n\\nCMP 320\\n\\nSUPPORT 310\\n\\nVIEW 330-340\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**\\n\\nLooking for BTS",
-        views: "8254",
+          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nWABAG\\n\\nCMP 965-970\\n\\nSUPPORT 940\\n\\nVIEW 1000*1020\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**",
+        views: "10296",
+      },
+      {
+        date: "22-4-2024",
+        message: "\\xef\\xbb\\xbfEQUITY PICK \\n\\nMANORAMA \\n\\n605 to 625\\n\\nVIEW achieved \\n\\n20 points",
+        views: "10133",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nMANORAMA \\n\\nCMP 605\\n\\nSUPPORT 585\\n\\nVIEW 625-645\\n\\nBTST VIEW\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.*",
-        views: "9064",
+          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nTD POWER SYSTEM \\n\\nCMP 320\\n\\nSUPPORT 310\\n\\nVIEW 330-340\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**\\n\\nLooking for BTST",
+        views: "10211",
+      },
+      {
+        date: "22-4-2024",
+        message:
+          "\\xef\\xbb\\xbfEQUITY PICK \\n\\nMANORAMA \\n\\nCMP 605\\n\\nSUPPORT 585\\n\\nVIEW 625-645\\n\\nBTST VIEW\\n\\n\\n**Disclaimer :-\\nAbove calls are Not Buy or Sell Levels,These opinions are for educational purposes only, based on research. Consult your financial advisor before investing.**",
+        views: "10863",
       },
     ],
   },
   {
     grpName: "Stockpro Online",
-    subscribers: "266632",
+    subscribers: "266756",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nVOTAS\\n Looks Good ABOVE 1365\\nSL 1350\\n\\nTargets 7-15-25-30-35 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "23761",
+          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nVOTAS\\n Looks Good ABOVE 1365\\nSL 1350\\n\\nTargets 7-15-25-30-35 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "29394",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nHUHTAMAKI Looks Good ABOVE 345\\nSL 325\\n\\nTargets 350-360-370 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "24908",
+          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nHUHTAMAKI Looks Good ABOVE 345\\nSL 325\\n\\nTargets 350-360-370 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "31180",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nBAJAJ FINANCE\\nLooks Good ABOVE 7300\\nSL 7200\\n\\nTargets 50-100-150-200-250-300-350-400-459-500 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "26509",
+          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nBAJAJ FINANCE\\nLooks Good ABOVE 7300\\nSL 7200\\n\\nTargets 50-100-150-200-250-300-350-400-459-500 points from entry \\n\\n\\nHold few days \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "32618",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nINDO STAR \\nLooks Good ABOVE 267\\nSL 250\\n\\nTargets 274-280-285-290-300\\n\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "26971",
+          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nINDO STAR \\nLooks Good ABOVE 267\\nSL 250\\n\\nTargets 274-280-285-290-300\\n\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "32087",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nAMARA RAJA \\nLooks Good ABOVE 1040\\nSL 1000\\n\\nTarget 1060-1080-1100-1125-1150\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "29547",
+          "\\xef\\xbb\\xbfPOSITIONAL TRADE\\n\\nAMARA RAJA \\nLooks Good ABOVE 1040\\nSL 1000\\n\\nTarget 1060-1080-1100-1125-1150\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "34540",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nVENUS PIPE \\nLooks Good ABOVE 2130\\nSL 2080\\n\\nTarget 2150-2200-2250-2300-235-2400-2500\\n\\n\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation",
-        views: "29384",
+          "\\xef\\xbb\\xbfPISITIONAL TRADE\\n\\nVENUS PIPE \\nLooks Good ABOVE 2130\\nSL 2080\\n\\nTarget 2150-2200-2250-2300-235-2400-2500\\n\\n\\n\\nHold few weeks \\n\\nPlease consult your financial advisor before investing\\nAll research for educational purposes only.\\n\\n\\nReversal from bottom, RSI is shifting in upper direction. Stock is ready to cross past barriers with good volumes. Breakout after long consolidation.",
+        views: "33960",
       },
     ],
   },
   {
     grpName: "STOCKS TIME (SEBI REGISTERED RA)",
-    subscribers: "8650",
+    subscribers: "8570",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfTD POWER SYSTEM LOOKING STRONG ....\\n\\nBREAKOUT EXPECTE",
-        views: "372",
+        message: "\\xef\\xbb\\xbfTD POWER SYSTEM LOOKING STRONG ....\\n\\nBREAKOUT EXPECTED",
+        views: "585",
       },
     ],
   },
   {
     grpName: "Chase Alpha | SEBI Registered IA",
-    subscribers: "36071",
+    subscribers: "36094",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfReliance result analysis and tomorrow's trading plan. \\n\\nhttps://youtu.be/0ZRxjfnCk5",
-        views: "3669",
+        message: "\\xef\\xbb\\xbfReliance result analysis and tomorrow's trading plan. \\n\\nhttps://youtu.be/0ZRxjfnCk5w",
+        views: "7552",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbf**Market Analysis 22 April**\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty Found support in 21700-21800 zone as expected in previous session and had 300+ Pt bounce from the zone\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty going into consolidation zone with support at 22000 and Resistance at 22400 in the monthly expiry week.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty can remain Buy on Dips till previous day low of 21800 is being held which is a important buy zone.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f ATM Straddle of 22150 at 290\\n\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8fBanknifty was stronger in the bounce from 46700 and support at 47200.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Banknfity heading for 47800-48000 with HDFC bank Results and expect volatility in the index for the expiry week\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f ATM Straddle 47600 at 845\\n\\n\\nhttps://rb.gy/v8htd",
-        views: "6485",
+          "\\xef\\xbb\\xbf**Market Analysis 22 April**\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty Found support in 21700-21800 zone as expected in previous session and had 300+ Pt bounce from the zone\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty going into consolidation zone with support at 22000 and Resistance at 22400 in the monthly expiry week.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Nifty can remain Buy on Dips till previous day low of 21800 is being held which is a important buy zone.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f ATM Straddle of 22150 at 290\\n\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8fBanknifty was stronger in the bounce from 46700 and support at 47200.\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f Banknfity heading for 47800-48000 with HDFC bank Results and expect volatility in the index for the expiry week\\n\\n\\xe2\\x9e\\xa1\\xef\\xb8\\x8f ATM Straddle 47600 at 845\\n\\n\\nhttps://rb.gy/v8htda",
+        views: "8411",
+      },
+      {
+        date: "21-4-2024",
+        message: "\\xef\\xbb\\xbfMarket analysis for upcoming week, and #hdfcbank result analysis.",
+        views: "8277",
+      },
+      {
+        date: "21-4-2024",
+        message: "\\xef\\xbb\\xbfhttps://youtu.be/Yxm6Nlz31go?si=jGWC3prGeWei4VYX",
+        views: "8587",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbf\\xe0\\xa4\\x86\\xe0\\xa4\\xaa \\xe0\\xa4\\xb8\\xe0\\xa4\\xad\\xe0\\xa5\\x80 \\xe0\\xa4\\x95\\xe0\\xa5\\x8b \\xe0\\xa4\\xad\\xe0\\xa4\\x97\\xe0\\xa4\\xb5\\xe0\\xa4\\xbe\\xe0\\xa4\\xa8 \\xe0\\xa4\\xae\\xe0\\xa4\\xb9\\xe0\\xa4\\xbe\\xe0\\xa4\\xb5\\xe0\\xa5\\x80\\xe0\\xa4\\xb0 \\xe0\\xa4\\x9c\\xe0\\xa4\\xaf\\xe0\\xa4\\x82\\xe0\\xa4\\xa4\\xe0\\xa5\\x80  \\xe0\\xa4\\x95\\xe0\\xa5\\x80 \\xe0\\xa4\\xb9\\xe0\\xa4\\xbe\\xe0\\xa4\\xb0\\xe0\\xa5\\x8d\\xe0\\xa4\\xa6\\xe0\\xa4\\xbf\\xe0\\xa4\\x95 \\xe0\\xa4\\xb6\\xe0\\xa5\\x81\\xe0\\xa4\\xad\\xe0\\xa4\\x95\\xe0\\xa4\\xbe\\xe0\\xa4\\xae\\xe0\\xa4\\xa8\\xe0\\xa4\\xbe\\xe0\\xa4\\x8f\\xe0\\xa4\\x81\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x8f\\xbc",
+        views: "8682",
       },
     ],
   },
   {
     grpName: "Equity99",
-    subscribers: "141466",
+    subscribers: "141435",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfMorning Alert..\\n*Indian refiners may need a rethink amid shrinking Russian crude discounts*\\nIndia\\xe2\\x80\\x99s appetite may be waning for crude oil from Russia, the country\\xe2\\x80\\x99s biggest source, with discounts shrinking by 77 per cent from a record high in early 2023, and by 61 per cent from the months after the invasion of Ukraine in February, suggests exclusive data accessed by Business Standard. But even record-low discounts at present are offering value to India\\xe2\\x80\\x99s state-run refiners, which are grappling with the inability to adjust pump prices for nearly two years. They lowered petrol and diesel rates by Rs 2 per litre last month, despite rising crude oil prices. Discounts on Russian crude oil could currently be contributing $1.5 to $2.5 per barrel to gross refining margins (GRMs) of state oil refiners, but there are no official numbers available, said Swarnendu Bhushan, co-head of research at Mumbai-based brokerage Prabhudas Lilladher. The refiners are securing 20-30 per cent of their crude oil imports from Russia, he added. The contribution accounted for around 15 per cent of the average GRMs posted in the nine months to December 2023. \\n\\n*Net direct tax collection surpasses RE in FY24; corp tax receipts a miss*\\nDirect tax collection, net of refunds, moderately exceeded the revised estimates (RE) for the financial year 2023-24 (FY24) on the back of personal income tax revenues, but corporation tax receipts fell short of the RE. Net direct tax collection stood at Rs 19.58 trillion in FY24, surpassing the RE of Rs 19.45 trillion by Rs 13,000 crore, or 0.7 per cent. The government had revised up FY24 projections for personal income tax by 13.5 per cent over the Budget estimates (BE) of Rs 9 trillion, at Rs 10.22 trillion. The actual collection (including securities transaction tax), however, exceeded the RE by 2.1 per cent at Rs 10.44 trillion. On the other hand, the RE for corporation tax was kept at the same level as the BE, at Rs 9.23 trillion for the year. Even then, the mopup fell short of the estimates by Rs 12,000 crore, or 1.3 per cent, at Rs 9.11 trillion.\\n\\n*Global market action*\\nDow Jones \\xe2\\x80\\x93 Up by 0.20% or 75.16 points\\nFTSE \\xe2\\x80\\x93 Up by 0.24% or 18.80 points\\nCAC \\xe2\\x80\\x93 Down by 0.01% or 0.85 points\\nDAX \\xe2\\x80\\x93 Down by 0.56% or 100.04 points\\nGift Nifty \\xe2\\x80\\x93 Up by 0.79% or 174 points\\n \\n*FII/DII activities*\\nFII \\xe2\\x80\\x93 Bought 129.39 Cr worth of shares\\nDII \\xe2\\x80\\x93 Sold 52.50 Cr worth of shares.\\n\\n*Stocks with high delivery Percentage*\\nTTK Prestige Ltd \\xe2\\x80\\x93 94.9%\\nSundaram Fasteners Ltd \\xe2\\x80\\x93 89.3%\\nGrindwell Norton Ltd \\xe2\\x80\\x93 86%\\nJB Chemicals & Pharma Ltd \\xe2\\x80\\x93 84.9%\\nEris Lifesciences Ltd \\xe2\\x80\\x93 84.7%\\n\\n*Primary market activities*\\nIPOs opening today\\nVaryaa Creations Ltd (BSE SME) \\xe2\\x80\\x93 Issue size 20.10Cr\\n\\nListing today\\nGreenhitech Ventures Ltd (BSE SME) \\xe2\\x80\\x93 Subscribed 769.95x\\n\\n*Commodities updates*\\nGold \\xe2\\x80\\x93 Rs 75875/10gm, Silver \\xe2\\x80\\x93 Rs 83524/kg, Brcrude \\xe2\\x80\\x93 Rs 6893/barrel, Copper \\xe2\\x80\\x93 Rs 845.4/kg.\\n\\n*Corporate News*\\nHero MotoCorp opens assembly facility with 75,000 units capacity in Nepal.\\n\\nUltraTech Cement buys grinding unit from India Cements, announces expansion.\\n\\nICICI Bank: The Board to consider raising of funds by way of issuance of debt securities on April 27, 2024.\\n\\nAllcargo Gati- March 2024 business update: Total volume, including surface and air express, stood at 111 kt, recording an increase of 3% as compared to March 2023",
-        views: "14447",
+          "\\xef\\xbb\\xbfMorning Alert..\\n*Indian refiners may need a rethink amid shrinking Russian crude discounts*\\nIndia\\xe2\\x80\\x99s appetite may be waning for crude oil from Russia, the country\\xe2\\x80\\x99s biggest source, with discounts shrinking by 77 per cent from a record high in early 2023, and by 61 per cent from the months after the invasion of Ukraine in February, suggests exclusive data accessed by Business Standard. But even record-low discounts at present are offering value to India\\xe2\\x80\\x99s state-run refiners, which are grappling with the inability to adjust pump prices for nearly two years. They lowered petrol and diesel rates by Rs 2 per litre last month, despite rising crude oil prices. Discounts on Russian crude oil could currently be contributing $1.5 to $2.5 per barrel to gross refining margins (GRMs) of state oil refiners, but there are no official numbers available, said Swarnendu Bhushan, co-head of research at Mumbai-based brokerage Prabhudas Lilladher. The refiners are securing 20-30 per cent of their crude oil imports from Russia, he added. The contribution accounted for around 15 per cent of the average GRMs posted in the nine months to December 2023. \\n\\n*Net direct tax collection surpasses RE in FY24; corp tax receipts a miss*\\nDirect tax collection, net of refunds, moderately exceeded the revised estimates (RE) for the financial year 2023-24 (FY24) on the back of personal income tax revenues, but corporation tax receipts fell short of the RE. Net direct tax collection stood at Rs 19.58 trillion in FY24, surpassing the RE of Rs 19.45 trillion by Rs 13,000 crore, or 0.7 per cent. The government had revised up FY24 projections for personal income tax by 13.5 per cent over the Budget estimates (BE) of Rs 9 trillion, at Rs 10.22 trillion. The actual collection (including securities transaction tax), however, exceeded the RE by 2.1 per cent at Rs 10.44 trillion. On the other hand, the RE for corporation tax was kept at the same level as the BE, at Rs 9.23 trillion for the year. Even then, the mopup fell short of the estimates by Rs 12,000 crore, or 1.3 per cent, at Rs 9.11 trillion.\\n\\n*Global market action*\\nDow Jones \\xe2\\x80\\x93 Up by 0.20% or 75.16 points\\nFTSE \\xe2\\x80\\x93 Up by 0.24% or 18.80 points\\nCAC \\xe2\\x80\\x93 Down by 0.01% or 0.85 points\\nDAX \\xe2\\x80\\x93 Down by 0.56% or 100.04 points\\nGift Nifty \\xe2\\x80\\x93 Up by 0.79% or 174 points\\n \\n*FII/DII activities*\\nFII \\xe2\\x80\\x93 Bought 129.39 Cr worth of shares\\nDII \\xe2\\x80\\x93 Sold 52.50 Cr worth of shares.\\n\\n*Stocks with high delivery Percentage*\\nTTK Prestige Ltd \\xe2\\x80\\x93 94.9%\\nSundaram Fasteners Ltd \\xe2\\x80\\x93 89.3%\\nGrindwell Norton Ltd \\xe2\\x80\\x93 86%\\nJB Chemicals & Pharma Ltd \\xe2\\x80\\x93 84.9%\\nEris Lifesciences Ltd \\xe2\\x80\\x93 84.7%\\n\\n*Primary market activities*\\nIPOs opening today\\nVaryaa Creations Ltd (BSE SME) \\xe2\\x80\\x93 Issue size 20.10Cr\\n\\nListing today\\nGreenhitech Ventures Ltd (BSE SME) \\xe2\\x80\\x93 Subscribed 769.95x\\n\\n*Commodities updates*\\nGold \\xe2\\x80\\x93 Rs 75875/10gm, Silver \\xe2\\x80\\x93 Rs 83524/kg, Brcrude \\xe2\\x80\\x93 Rs 6893/barrel, Copper \\xe2\\x80\\x93 Rs 845.4/kg.\\n\\n*Corporate News*\\nHero MotoCorp opens assembly facility with 75,000 units capacity in Nepal.\\n\\nUltraTech Cement buys grinding unit from India Cements, announces expansion.\\n\\nICICI Bank: The Board to consider raising of funds by way of issuance of debt securities on April 27, 2024.\\n\\nAllcargo Gati- March 2024 business update: Total volume, including surface and air express, stood at 111 kt, recording an increase of 3% as compared to March 2023.",
+        views: "17278",
       },
     ],
   },
   {
     grpName: "Financial Independence Services & Neha0103 - Sebi Registered Investment Advisors",
-    subscribers: "40865",
+    subscribers: "40886",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfhttps://www.instagram.com/reel/C6EHItCPQRA/?igsh=MWxzZGtqamFhZzdxbA==\\n\\n\\nShare with your Trader Friend \\xf0\\x9f\\x98\\x89\\xf0\\x9f\\x98\\x89\\n\\nWish to join FIS Family ping @FIS_admin \\xf0\\x9f\\xa4\\x97\\xf0\\x9f\\xa4\\x9",
-        views: "131",
+          "\\xef\\xbb\\xbfhttps://www.instagram.com/reel/C6EHItCPQRA/?igsh=MWxzZGtqamFhZzdxbA==\\n\\n\\nShare with your Trader Friend \\xf0\\x9f\\x98\\x89\\xf0\\x9f\\x98\\x89\\n\\nWish to join FIS Family ping @FIS_admin \\xf0\\x9f\\xa4\\x97\\xf0\\x9f\\xa4\\x97",
+        views: "756",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfPing @FIS_admin and book your seat Now!! \\n\\nStart the Profitable and GREEN Journey with FIS\\xf0\\x9f\\xa4\\x9",
-        views: "233",
-      },
-      {
-        date: "22-4-2024",
-        message:
-          "\\xef\\xbb\\xbf\\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\x8c\\xb9 \\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\x8c\\xb9 **2,50,000 **profit today - FIS knows how to make the most of trending market!! Join n start your profitable journey with FIS, ping @FIS_admin to avail our green Monday deal\\xf0\\x9f\\x91\\x88\\xe2\\x9c\\x8c\\xef\\xb8\\x8f\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\xa5\\xb",
-        views: "799",
+        message: "\\xef\\xbb\\xbfPing @FIS_admin and book your seat Now!! \\n\\nStart the Profitable and GREEN Journey with FIS\\xf0\\x9f\\xa4\\x9d",
+        views: "547",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfAnkit Special MAGIC TRADE\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d PNB\\xe2\\x9c\\x85\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb Count the Gains!",
-        views: "521",
-      },
-      {
-        date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfThis is a pay to view content. Unlock to get 'Results call'\\n https://rpy.club/lm/GOJxi2gyQ",
-        views: "535",
+          "\\xef\\xbb\\xbf\\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\x8c\\xb9 \\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\x8c\\xb9 **2,50,000 **profit today - FIS knows how to make the most of trending market!! Join n start your profitable journey with FIS, ping @FIS_admin to avail our green Monday deal\\xf0\\x9f\\x91\\x88\\xe2\\x9c\\x8c\\xef\\xb8\\x8f\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\xa5\\xb3\\xf0\\x9f\\xa5\\xb0",
+        views: "1623",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfGuys Plz Participate in VODAFONE IDEA FPO \\xf0\\x9f\\xa4\\x9d\\xf0\\x9f\\x91\\x86\\xf0\\x9f\\x8f\\xbb\\xf0\\x9f\\x92\\xaa Wish to join FIS FAMILY ping @fis_admi",
-        views: "936",
+          "\\xef\\xbb\\xbfAnkit Special MAGIC TRADE\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d PNB\\xe2\\x9c\\x85\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb Count the Gains!!",
+        views: "879",
+      },
+      {
+        date: "22-4-2024",
+        message: "\\xef\\xbb\\xbfThis is a pay to view content. Unlock to get 'Results call'\\n https://rpy.club/lm/GOJxi2gyQy",
+        views: "894",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfAnother Premium Futures Afternoon Call\\xf0\\x9f\\x92\\xaa We have before Business Channel\\xf0\\x9f\\xa4\\x9d \\n\\nCrompton 309.65\\xf0\\x9f\\x9a\\x80\\xe2\\x9c\\x88\\xef\\xb8\\x8f 1800 Shares lot\\xe2\\x80\\x9",
-        views: "994",
+          "\\xef\\xbb\\xbfGuys Plz Participate in VODAFONE IDEA FPO \\xf0\\x9f\\xa4\\x9d\\xf0\\x9f\\x91\\x86\\xf0\\x9f\\x8f\\xbb\\xf0\\x9f\\x92\\xaa Wish to join FIS FAMILY ping @fis_admin",
+        views: "1414",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPremium Options+ BTST call\\xf0\\x9f\\x92\\xaa \\nWe have ZYDUS LIFE CE Before its on Business Channel\\xf0\\x9f\\xa4\\x9d\\n\\nNEED MINIMUM 40K capital to join this Pack @FIS_admin\\xe2\\x80\\x9",
-        views: "544",
+          "\\xef\\xbb\\xbfAnother Premium Futures Afternoon Call\\xf0\\x9f\\x92\\xaa We have before Business Channel\\xf0\\x9f\\xa4\\x9d \\n\\nCrompton 309.65\\xf0\\x9f\\x9a\\x80\\xe2\\x9c\\x88\\xef\\xb8\\x8f 1800 Shares lot\\xe2\\x80\\x99",
+        views: "1378",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfPremium Futures Afternoon Call - HERO MOTORS 4329\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 \\nConservative booked and trailed the SL to cost",
-        views: "896",
+          "\\xef\\xbb\\xbfPremium Options+ BTST call\\xf0\\x9f\\x92\\xaa \\nWe have ZYDUS LIFE CE Before its on Business Channel\\xf0\\x9f\\xa4\\x9d\\n\\nNEED MINIMUM 40K capital to join this Pack @FIS_admin\\xe2\\x80\\x99",
+        views: "717",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfFIS Exclusive Call - INDIGO\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb 3704\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 Shared Exclusively in THE FIS PACK\\xf0\\x9f\\xa4\\x9d \\n\\nPing @FIS_admin and Subscribe or Upgrade now!",
-        views: "514",
+          "\\xef\\xbb\\xbfPremium Futures Afternoon Call - HERO MOTORS 4329\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 \\nConservative booked and trailed the SL to cost!",
+        views: "1230",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfAlmost doubled in less than 45 Minutes!! 6k Gains for  conservative traders  with investment of just 10k !! Power of FIS \\xe2\\x98\\xba\\xef\\xb8\\x8f\\xe2\\x9c\\x88\\xef\\xb8\\x8",
-        views: "536",
+          "\\xef\\xbb\\xbfFIS Exclusive Call - INDIGO\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb 3704\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 Shared Exclusively in THE FIS PACK\\xf0\\x9f\\xa4\\x9d \\n\\nPing @FIS_admin and Subscribe or Upgrade now!!",
+        views: "705",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfHappy Clients Makes us Happy and Motivates us to Work More Hard\\xf0\\x9f\\x92\\xaa \\n\\n29,000+ Gains booked in Results + News Call - DIXON\\xf0\\x9f\\x92\\xaa \\n\\nPing @FIS_admin and join now",
-        views: "1035",
-      },
-      {
-        date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfPing @FIS_admin and book your seat Now!! \\n\\nStart the Profitable and GREEN Journey with FIS\\xf0\\x9f\\xa4\\x9",
-        views: "563",
+          "\\xef\\xbb\\xbfAlmost doubled in less than 45 Minutes!! 6k Gains for  conservative traders  with investment of just 10k !! Power of FIS \\xe2\\x98\\xba\\xef\\xb8\\x8f\\xe2\\x9c\\x88\\xef\\xb8\\x8f",
+        views: "742",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfGuys - Have a look at our Siemens CE  Call  booked **7k profit in just 7 mint** **trade** **Make 'BIG GAINS with SMALL CAPITAL**', Ping @FIS_admin and subscribe by availing today\\xe2\\x80\\x99s offer \\xf0\\x9f\\x8c\\xb9\\xf0\\x9f\\x9a\\x80\\xe2\\x99\\xa5\\xef\\xb8\\x8f\\xf0\\x9f\\xa5\\xb",
-        views: "973",
+          "\\xef\\xbb\\xbfHappy Clients Makes us Happy and Motivates us to Work More Hard\\xf0\\x9f\\x92\\xaa \\n\\n29,000+ Gains booked in Results + News Call - DIXON\\xf0\\x9f\\x92\\xaa \\n\\nPing @FIS_admin and join now!",
+        views: "1361",
+      },
+      {
+        date: "22-4-2024",
+        message: "\\xef\\xbb\\xbfPing @FIS_admin and book your seat Now!! \\n\\nStart the Profitable and GREEN Journey with FIS\\xf0\\x9f\\xa4\\x9d",
+        views: "616",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfAn awesome morning for TEAM FIS \\xf0\\x9f\\x9a\\x80\\xe2\\x98\\x9d\\xef\\xb8\\x8f Wish to Subscribe PING @FIS_Admin  Couple of calls are still open with strict SL !! Wish to TRADE with discipline and rules join us now !! FRESH CALLS after 1 PM as per pack !! **TREND IS MY FRIEND PACK is SWING EQUITY PACK for 10% gains roughly*",
-        views: "593",
+          "\\xef\\xbb\\xbfGuys - Have a look at our Siemens CE  Call  booked **7k profit in just 7 mint** **trade** **Make 'BIG GAINS with SMALL CAPITAL**', Ping @FIS_admin and subscribe by availing today\\xe2\\x80\\x99s offer \\xf0\\x9f\\x8c\\xb9\\xf0\\x9f\\x9a\\x80\\xe2\\x99\\xa5\\xef\\xb8\\x8f\\xf0\\x9f\\xa5\\xb3",
+        views: "1220",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfAnother Morning Futures Call\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb CANARA BANK!\\n\\n\\nWhat are you waiting for Guys?? \\n\\nPing @FIS_admin and avail Todays Deal Prices!",
-        views: "641",
+          "\\xef\\xbb\\xbfAn awesome morning for TEAM FIS \\xf0\\x9f\\x9a\\x80\\xe2\\x98\\x9d\\xef\\xb8\\x8f Wish to Subscribe PING @FIS_Admin  Couple of calls are still open with strict SL !! Wish to TRADE with discipline and rules join us now !! FRESH CALLS after 1 PM as per pack !! **TREND IS MY FRIEND PACK is SWING EQUITY PACK for 10% gains roughly**",
+        views: "707",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfMorning Futures Call\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d INDIGO 3683\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 Conservative booked and trailed the Sl to cost",
-        views: "1122",
+          "\\xef\\xbb\\xbfAnother Morning Futures Call\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x99\\xf0\\x9f\\x8f\\xbb CANARA BANK!\\n\\n\\nWhat are you waiting for Guys?? \\n\\nPing @FIS_admin and avail Todays Deal Prices!!",
+        views: "794",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfJust Count the Bumper Profits Guys\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d 95,000+ PROFITS Per lot already Running\\xf0\\x9f\\x91\\x8d\\xe2\\x9c\\x85 \\n\\n\\nHow would you rate our Technical Analysis - Ping @FIS_admin and join now",
-        views: "1134",
-      },
-      {
-        date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfNO STOPPING HIND COPPER 375 to 391.70\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x92\\xa",
-        views: "1047",
+          "\\xef\\xbb\\xbfMorning Futures Call\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d INDIGO 3683\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 Conservative booked and trailed the Sl to cost!",
+        views: "1411",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfThats How we share Trading Calls Guys - Levels well in advance - **National Alum 190.55\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x9a\\x80 and Hind Copper 385.50\\xf0\\x9f\\x9a\\x80**\\xf0\\x9f\\x9a\\x80 Conservative booked and trailed the SL to cost already!\\n\\nPing @FIS_admin and Join now!",
-        views: "605",
+          "\\xef\\xbb\\xbfJust Count the Bumper Profits Guys\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\xa4\\x9d 95,000+ PROFITS Per lot already Running\\xf0\\x9f\\x91\\x8d\\xe2\\x9c\\x85 \\n\\n\\nHow would you rate our Technical Analysis - Ping @FIS_admin and join now!",
+        views: "1333",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfThis is a pay to view content. Unlock to get '2 Weeks of Results Pack '\\n https://rpy.club/lm/AKW2JfFxo",
-        views: "711",
+        message: "\\xef\\xbb\\xbfNO STOPPING HIND COPPER 375 to 391.70\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x92\\xaa",
+        views: "1246",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfGm guys \\xf0\\x9f\\x98\\x8a\\n\\nWe are ready with our Results calls are you ?\\n\\nResults pack gets sharp stock specific Pre and Post **results call** and is a must have with all fis family members \\xf0\\x9f\\x98\\x8a\\n\\nSpecial Deal is live for limited seats ping @fis_admin now \\xf0\\x9f\\x91\\x8",
-        views: "741",
+          "\\xef\\xbb\\xbfThats How we share Trading Calls Guys - Levels well in advance - **National Alum 190.55\\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x9a\\x80 and Hind Copper 385.50\\xf0\\x9f\\x9a\\x80**\\xf0\\x9f\\x9a\\x80 Conservative booked and trailed the SL to cost already!\\n\\nPing @FIS_admin and Join now!!",
+        views: "756",
+      },
+      {
+        date: "22-4-2024",
+        message: "\\xef\\xbb\\xbfThis is a pay to view content. Unlock to get '2 Weeks of Results Pack '\\n https://rpy.club/lm/AKW2JfFxos",
+        views: "832",
+      },
+      {
+        date: "22-4-2024",
+        message:
+          "\\xef\\xbb\\xbfGm guys \\xf0\\x9f\\x98\\x8a\\n\\nWe are ready with our Results calls are you ?\\n\\nResults pack gets sharp stock specific Pre and Post **results call** and is a must have with all fis family members \\xf0\\x9f\\x98\\x8a\\n\\nSpecial Deal is live for limited seats ping @fis_admin now \\xf0\\x9f\\x91\\x8d",
+        views: "832",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbfPerformance Snapshot of call of the day pack \\n\\nWe have given 8 calls this week instead of 4 with 100% Accuracy \\n\\nCall of day pack free if your subscribe under today\\xe2\\x80\\x99s offer \\xf0\\x9f\\x92\\xaf\\xf0\\x9f\\x92\\xaf\\n\\nShare payment screenshot @fis_admin \\xf0\\x9f\\x98\\x8a\\xf0\\x9f\\x91\\x8d\\xf0\\x9f\\xa4\\x98",
+        views: "637",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbfGuys Last Chance to Join the Special 2+2+2 Deal\\xf0\\x9f\\xa4\\x9d\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\x9a\\x80 \\n\\n\\nPing @FIS_admin and book your seat now! Credit Card and EMI option available\\xe2\\x80\\x99\\xf0\\x9f\\xa4\\x9d",
+        views: "1227",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          '\\xef\\xbb\\xbfhttps://drive.google.com/drive/folders/1gNKI7oQ99rXUK6kKdNxbaUQKu6BOke0b\\n\\n\\n**"Experience the exceptional quality of our services and hear what our clients have to say!  Join us for a rewarding experience and explore their valuable testimonials. \\xf0\\x9f\\x9a\\x80\\xf0\\x9f\\x92\\xb0\\xf0\\x9f\\x91\\x8f"**',
+        views: "658",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbf9 reasons why you should choose FIS as your Investment advisor.\\xf0\\x9f\\x92\\xaf\\n\\nMsg @fis_admin to join under  sunday are for saving Deal. Card and EMI options also available.\\xe2\\x9c\\x85",
+        views: "689",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbfSunday's are for Savings are for More Freebies Guys\\xf0\\x9f\\xa4\\x98\\xf0\\x9f\\x8f\\xbb\\n\\n\\xf0\\x9f\\x91\\x89\\xf0\\x9f\\x8f\\xbb**__Subscribe for 2 Months and get 2 Month Subscription FREE + 2 packs FREE worth Rs 67,199/-\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x8f\\xbb\\xf0\\x9f\\x9a\\x80__**\\n\\nPing @FIS_admin and Renew, Subscribe or Upgrade Now!!",
+        views: "1361",
+      },
+      {
+        date: "21-4-2024",
+        message:
+          "\\xef\\xbb\\xbfDay wise and Week Wise performance Snapshot for all packs! \\n\\nWish to join ping @fis_admin to make consistent gains with FIS, availing Today\\xe2\\x80\\x99s OFFER\\xf0\\x9f\\x92\\xaa\\xf0\\x9f\\x9a\\x80\\xe2\\x9c\\x88\\xef\\xb8\\x8f\\xf0\\x9f\\xa4\\x9d\\n\\nTeam FIS has packs as per your Trading capital, Time Availability and Trading Experience!",
+        views: "678",
       },
     ],
   },
   {
     grpName: "🤑 EVERYDAY PROFITS 🤑",
-    subscribers: "133993",
+    subscribers: "128203",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbf#BANKNIFTY 47800 PE \\n\\n310 TO 405 \\n\\nALL TARGET DONE ALLMOST \\xe2\\x9c\\x8",
-        views: "325",
+        message: "\\xef\\xbb\\xbf#BANKNIFTY 47800 PE \\n\\n310 TO 405 \\n\\nALL TARGET DONE ALLMOST \\xe2\\x9c\\x85",
+        views: "384",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfBUY BANKNIFTY 47800 PE\\n\\n ABOVE 310 \\n\\nTARGET 350/370/410+",
-        views: "326",
+        message: "\\xef\\xbb\\xbfBUY BANKNIFTY 47800 PE\\n\\n ABOVE 310 \\n\\nTARGET 350/370/410++",
+        views: "373",
       },
     ],
   },
   {
     grpName: "Eqwires Research Analyst(SEBI Registered)",
-    subscribers: "13025",
+    subscribers: "13020",
     messages: [],
   },
   {
     grpName: "PATELWEALTH",
-    subscribers: "98280",
+    subscribers: "101978",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbf**BANKEX 54200 PE ABOVE 270\\n\\nTGT - PREMIUM \\n\\nSL - PREMIUM*",
-        views: "512",
+        message: "\\xef\\xbb\\xbf**BANKEX 54200 PE ABOVE 270\\n\\nTGT - PREMIUM \\n\\nSL - PREMIUM**",
+        views: "591",
       },
     ],
   },
   {
     grpName: "VG STOCK RESEARCH (SEBI REG. FIRM)",
-    subscribers: "1388",
+    subscribers: "1384",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfVG STOCK RESEARCH\\n(SEBI-REG. FIRM)\\n\\n#NIFTYVIEW:\\n\\n\\xf0\\x9f\\x8e\\xaf #NIFTY likely to open @ or Around 22294-22349\\n\\n\\xf0\\x9f\\x8e\\xaf NIFTY is likely to see #RESISTANCE@ or around 22354-22429-22504\\n\\n\\xf0\\x9f\\x8e\\xaf NIFTY KEY #SUPPORT lies @ 22147-22079-21962\\n\\n\\xf0\\x9f\\x8e\\xaf Fellas #Nifty is likely to give good gap up opening following positive #GlobalCues\\xf0\\x9f\\x99\\x8f In #Nifty the upside may not be a consistent one & these upside have potential resistance within the redefined range of 22487-22613 \\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 Meanwhile crucial support now remains within recent low's of 21777 any breach below can show us 21100-21300 range which can also be considered as crucial support ranges\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 In #BankNifty the upside potential can be considered towards 48715 kinds of levels while crucial support now exists @ recent low's of 46579 any breach below can show us 45800 kinds of levels \\xf0\\x9f\\x99\\x8f In #NiftyAuto we remain neutral for the day while in #NiftyIT we remain highly #bullish with redefined crucial support range of 31200-32900 while immediate target remains @38000 kind of levels\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 In #DowFutures we could expect strong bounce back towards 39000 mark\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89\\n\\n\\xf0\\x9f\\x8e\\xaf Fellas #USDINR may hit 83 in this week \\xf0\\x9f\\x99\\x8f\\n\\n\\xf0\\x9f\\x8e\\xaf #Stock on radar #Wipro\\xf0\\x9f\\x98\\x89\\n\\n\\xf0\\x9f\\x9f\\xa2 Disclaimer: Our clients may or may not have interest in the above stock\\nhttps://twitter.com/VGSTOCKRESEARCH/status/178224508747843191",
-        views: "89",
+          "\\xef\\xbb\\xbfVG STOCK RESEARCH\\n(SEBI-REG. FIRM)\\n\\n#NIFTYVIEW:\\n\\n\\xf0\\x9f\\x8e\\xaf #NIFTY likely to open @ or Around 22294-22349\\n\\n\\xf0\\x9f\\x8e\\xaf NIFTY is likely to see #RESISTANCE@ or around 22354-22429-22504\\n\\n\\xf0\\x9f\\x8e\\xaf NIFTY KEY #SUPPORT lies @ 22147-22079-21962\\n\\n\\xf0\\x9f\\x8e\\xaf Fellas #Nifty is likely to give good gap up opening following positive #GlobalCues\\xf0\\x9f\\x99\\x8f In #Nifty the upside may not be a consistent one & these upside have potential resistance within the redefined range of 22487-22613 \\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 Meanwhile crucial support now remains within recent low's of 21777 any breach below can show us 21100-21300 range which can also be considered as crucial support ranges\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 In #BankNifty the upside potential can be considered towards 48715 kinds of levels while crucial support now exists @ recent low's of 46579 any breach below can show us 45800 kinds of levels \\xf0\\x9f\\x99\\x8f In #NiftyAuto we remain neutral for the day while in #NiftyIT we remain highly #bullish with redefined crucial support range of 31200-32900 while immediate target remains @38000 kind of levels\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89 In #DowFutures we could expect strong bounce back towards 39000 mark\\xf0\\x9f\\x99\\x8f\\xf0\\x9f\\x98\\x89\\n\\n\\xf0\\x9f\\x8e\\xaf Fellas #USDINR may hit 83 in this week \\xf0\\x9f\\x99\\x8f\\n\\n\\xf0\\x9f\\x8e\\xaf #Stock on radar #Wipro\\xf0\\x9f\\x98\\x89\\n\\n\\xf0\\x9f\\x9f\\xa2 Disclaimer: Our clients may or may not have interest in the above stock\\nhttps://twitter.com/VGSTOCKRESEARCH/status/1782245087478431913",
+        views: "131",
       },
     ],
   },
   {
     grpName: "Stockbox Trading (SEBI Registered)®️",
-    subscribers: "37380",
+    subscribers: "37307",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbf**Buy Appollo Tyre 495CE @ 4-4.20\\n\\n Target 6.20,7.20 \\n\\nSL 2.90*",
-        views: "2520",
+        message: "\\xef\\xbb\\xbf**Buy Appollo Tyre 495CE @ 4-4.20\\n\\n Target 6.20,7.20 \\n\\nSL 2.90**",
+        views: "3263",
       },
     ],
   },
   {
     grpName: "Trading with CA Abhay | SEBI REGISTERED",
-    subscribers: "48477",
+    subscribers: "48426",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfBuy Nifty 22200 CE @ 138 - 147\\n\\nTARGET- 165 - 182 - 198 - 220 - 245\\n\\nSTOP LOSS - 9",
-        views: "3661",
+        message: "\\xef\\xbb\\xbfBuy Nifty 22200 CE @ 138 - 147\\n\\nTARGET- 165 - 182 - 198 - 220 - 245\\n\\nSTOP LOSS - 93",
+        views: "4524",
       },
     ],
   },
   {
     grpName: "DELTA TRADING (SEBI REGISTERED)",
-    subscribers: "42299",
+    subscribers: "42274",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbf**04 SEATS LEFT ONLY FOR SECOND HALF CALLS \\n\\n\\xe2\\x80\\xbc\\xef\\xb8\\x8f Attention\\xe2\\x80\\xbc\\xef\\xb8\\x8f\\n\\n\\xf0\\x9f\\x9a\\x80 Only Few Minutes left for Next call \\xf0\\x9f\\x93\\xa3\\xf0\\x9f\\x93\\xa3 Enroll Now for \\xf0\\x9f\\x91\\x87\\n\\n\\xe2\\x9c\\x85Proper Entry And Exit\\n\\n\\xe2\\x9c\\x85 Proper Stoploss/Target\\n\\n\\xe2\\x9c\\x85Proper Risk Management\\n\\n\\xe2\\x9c\\x85 Proper Risk Reward\\n\\n\\xf0\\x9f\\x91\\x87 Join premium membership \\xf0\\x9f\\x91\\x87\\n\\n****https://DELTATRADING.rpy.club/g**/3bSfFKvO4B\\n\\n**LAST 04 SEAT LEFT FOR MIDCAP NIFTY CALL WHICH HAS AN CHANCE OF HIGH RETURNS*",
-        views: "1446",
+          "\\xef\\xbb\\xbf**04 SEATS LEFT ONLY FOR SECOND HALF CALLS \\n\\n\\xe2\\x80\\xbc\\xef\\xb8\\x8f Attention\\xe2\\x80\\xbc\\xef\\xb8\\x8f\\n\\n\\xf0\\x9f\\x9a\\x80 Only Few Minutes left for Next call \\xf0\\x9f\\x93\\xa3\\xf0\\x9f\\x93\\xa3 Enroll Now for \\xf0\\x9f\\x91\\x87\\n\\n\\xe2\\x9c\\x85Proper Entry And Exit\\n\\n\\xe2\\x9c\\x85 Proper Stoploss/Target\\n\\n\\xe2\\x9c\\x85Proper Risk Management\\n\\n\\xe2\\x9c\\x85 Proper Risk Reward\\n\\n\\xf0\\x9f\\x91\\x87 Join premium membership \\xf0\\x9f\\x91\\x87\\n\\n****https://DELTATRADING.rpy.club/g**/3bSfFKvO4B\\n\\n**LAST 04 SEAT LEFT FOR MIDCAP NIFTY CALL WHICH HAS AN CHANCE OF HIGH RETURNS**",
+        views: "2095",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfIF IT COMES AT 30 - 35 \\n\\nBUY AT THE  LEVEL WITH SAME SL \\n\\xe2\\x9c\\x85\\n\\nTARGET :- 42 , 49 , 55 , 70 ",
-        views: "2270",
+        message: "\\xef\\xbb\\xbfIF IT COMES AT 30 - 35 \\n\\nBUY AT THE  LEVEL WITH SAME SL \\n\\xe2\\x9c\\x85\\n\\nTARGET :- 42 , 49 , 55 , 70 +",
+        views: "2741",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfBHARATIARTL 1320 CE (APRIL) \\n\\nBUY IT BETWEEN :- 7.50 TO 8 \\n\\nSL :- 4.7\\n\\nTARGET :- 9.5 , 11 , 14 , 16 ",
-        views: "2326",
+        message: "\\xef\\xbb\\xbfBHARATIARTL 1320 CE (APRIL) \\n\\nBUY IT BETWEEN :- 7.50 TO 8 \\n\\nSL :- 4.7\\n\\nTARGET :- 9.5 , 11 , 14 , 16 +",
+        views: "2814",
       },
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbfMIDCAPNIFTY 10750 PE (22nd APRIL) \\n\\nBUY IT BETWEEN :- 20 - 28\\n\\nSL :- 8 \\n\\nTARGET :- 36 , 39 , 46 , 55 , 70 ",
-        views: "2247",
+          "\\xef\\xbb\\xbfMIDCAPNIFTY 10750 PE (22nd APRIL) \\n\\nBUY IT BETWEEN :- 20 - 28\\n\\nSL :- 8 \\n\\nTARGET :- 36 , 39 , 46 , 55 , 70 +",
+        views: "2665",
       },
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfBUY IT BETWEEN :- 388 TO 392\\n\\nSL :- 340 \\n\\nTARG :- 400 , 419 , 426 , 450 , 470 ",
-        views: "2512",
+        message: "\\xef\\xbb\\xbfBUY IT BETWEEN :- 388 TO 392\\n\\nSL :- 340 \\n\\nTARG :- 400 , 419 , 426 , 450 , 470 +",
+        views: "2892",
       },
     ],
   },
   {
     grpName: "Stock Wizard (SEBI Registered RA)",
-    subscribers: "15533",
+    subscribers: "15550",
     messages: [
       {
         date: "22-4-2024",
-        message: "\\xef\\xbb\\xbfFinnifty 21300 PE\\nNear 130\\nSL Below 9",
-        views: "3099",
+        message: "\\xef\\xbb\\xbfHigh made 155\\xf0\\x9f\\x92\\xa5\\nNow took SL",
+        views: "3572",
+      },
+      {
+        date: "22-4-2024",
+        message: "\\xef\\xbb\\xbfFinnifty 21300 PE\\nNear 130\\nSL Below 90",
+        views: "3649",
       },
     ],
   },
   {
     grpName: "A1 FREE INTRADAY TIPS [Reg]",
-    subscribers: "10108",
+    subscribers: "10106",
     messages: [],
   },
   {
     grpName: "GREEN TRADERS SEBI (STOCK Office)",
-    subscribers: "22419",
+    subscribers: "21796",
     messages: [
       {
         date: "22-4-2024",
         message:
-          "\\xef\\xbb\\xbf\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lot",
-        views: "38",
+          "\\xef\\xbb\\xbf\\xf0\\x9f\\x99\\x8f GOOD MORNING ALL \\xf0\\x9f\\x8c\\xbb\\n\\n\\xf0\\x9f\\x8c\\xba Have A Profitable Day today \\xf0\\x9f\\x8c\\xb9\\n\\n\\nNOTE: POSTS HERE ARE BASED ON MY RESEARCH AND ARE FOR EDUCATIONAL PURPOSES ONLY. We are not liable for any Profit or Loss.\\n\\nPLEASE CONSULT YOUR FINANCIAL ADVISOR\\nBEFORE BUYING OR SELLING.\\nTHANKS! \\xe2\\x9c\\xa8\\n\\nFew useful Abbreviations for new traders:\\nSL: Stop Loss\\nTGT: Target\\nCMP: Current Market PRICE\\nBTST: Buy Today Sell Tomorrow\\nSTBT: Sell Today Buy Tomorrow\\n\\nThe profit/loss figures mentioned are indicative and based on assumptions. \\n\\nFutures: Single Lot\\nOPTIONS: Single lot\\nIndex: 4-5lots",
+        views: "66",
       },
     ],
   },

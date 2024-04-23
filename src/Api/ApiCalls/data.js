@@ -115,3 +115,7 @@ export const fetchTelegramData = (data) => {
 export const fetchTelegramDataWithDateRange = (from, to) => {
   return wrappedFetch(`${API.GET_TELEGRAM_DATA}?from=${from}&to=${to}`);
 };
+
+export const fetchTelegramDataSearchInstances = (search, from, to) => {
+  return wrappedFetch(`${API.GET_RECOM_KEY}?keyword=${search}&from=${from}&to=${to}`, "get");
+};

@@ -44,9 +44,9 @@ function Row(props) {
       <TableRow className={""}>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} component='th' scope='row'>
           {row.name || row?.Name}
-          <p className='m-0'>Company's Name | NSE</p>
+          {/* <p className='m-0'>Company's Name | NSE</p> */}
           {/* <hr className='m-0' style={{ color: "white" }} /> */}
-          <p className='m-0'>{row?.date || "Date not available"}</p>
+          {/* <p className='m-0'>{row?.date || "Date not available"}</p> */}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
           {row?.date || "N/A"}
@@ -55,26 +55,68 @@ function Row(props) {
           {row.ltp || row.cmp || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.target || "N/A"}
+          {row.target || row.target1 || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
           {row.source || "N/A"}
         </TableCell>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-          <IconButton sx={{ fontFamily: "Roboto Slab", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
-            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-          </IconButton>
-        </TableCell>
+        {row?.source !== "SBI" && (
+          <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
+            <IconButton sx={{ fontFamily: "Roboto Slab", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
+              {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+            </IconButton>
+          </TableCell>
+        )}
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout='auto' unmountOnExit>
             <Box margin={1}>
               <Typography variant='h6' gutterBottom component='p' sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-                Overview
+                More Data
               </Typography>
               <Typography variant='' component={"p"} sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-                {row?.overview || "Here there will be further data..."}
+                {console.log(row, "this to show.")}
+                {row?.source === "ICICI" && (
+                  <div className='row'>
+                    <div className='col-6'>
+                      <p>Duration: {row?.duration || "N/A"}</p>
+                      <p>Entry Price: {row?.entryPrice || "N/A"}</p>
+                    </div>
+                    <div className='col-6'>
+                      <p>Potential(%): {row?.potentialPerc || "N/A"}</p>
+                      <p>Stop Loss: {row?.stopLoss || "N/A"}</p>
+                    </div>
+                  </div>
+                )}
+                {row?.source === "IIFL" && (
+                  <div className='row'>
+                    <div className='col-6'>
+                      <p>High: {row?.high || "N/A"}</p>
+                      <p>Low: {row?.low || "N/A"}</p>
+                    </div>
+                    <div className='col-6'>
+                      <p>All Time High: {row?.allTH || "N/A"}</p>
+                      <p>Change: {row?.change || "N/A"}</p>
+                    </div>
+                  </div>
+                )}
+                {row?.source === "5 PAISA" && (
+                  <div className='row'>
+                    <div className='col-6'>
+                      <p>Target 2: {row?.target2 || "N/A"}</p>
+                      <p>
+                        Action:{" "}
+                        <button className={`btn btn-${row?.action === "SELL" ? "danger" : "success"} recommendations-table-action-button`}>
+                          {row.action}
+                        </button>
+                      </p>
+                    </div>
+                    <div className='col-6'>
+                      <p>Stop Loss: {row?.sl || "N/A"}</p>
+                    </div>
+                  </div>
+                )}
               </Typography>
             </Box>
           </Collapse>
@@ -131,7 +173,9 @@ const RecommendationsModule = () => {
       console.log(item, "conversion array...");
       return {
         name: item?.name !== "" ? `${item.name.split("<")?.[0]}` : "N/A",
-        source: item?.name,
+        source: item?.source,
+        ltp: item?.ltp,
+        date: item?.date,
       };
     });
   };
@@ -229,7 +273,7 @@ const RecommendationsModule = () => {
           <hr style={{ color: "white" }} />
           <div className='col-4 ps-0'>
             <h5>What to do with these stocks?</h5>
-            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} height={"auto"} />
+            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} height={"70%"} />
           </div>
           <div className='col-8 pe-0'>
             <h5>Recommended Stocks</h5>
