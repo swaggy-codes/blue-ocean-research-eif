@@ -44,7 +44,7 @@ const TelegramModule = () => {
 
   const getRecomInstance = async (search) => {
     try {
-      const res = await fetchTelegramDataSearchInstances(search, parseInt(teleParams?.dateRange?.from), parseInt(teleParams?.dateRange?.to - 1));
+      const res = await fetchTelegramDataSearchInstances(search);
       console.log(res, "this is the response I want to see");
       setSearchInstanceResponse(res?.data);
     } catch (error) {
@@ -67,7 +67,7 @@ const TelegramModule = () => {
 
   useEffect(() => {
     if (!isNaN(teleParams?.dateRange?.from) && !isNaN(teleParams?.dateRange?.to !== NaN)) {
-      // getTeleRecom("");
+      getTeleRecom("");
     }
   }, [teleParams?.dateRange]);
 
@@ -181,7 +181,7 @@ const ViewGroupRecomComponent = ({ props }) => {
       console.log("Difference in days:", differenceInDays);
       console.log("Days from start date:", daysFromStart);
       console.log("Days from end date:", daysFromEnd);
-      setTeleParams((v) => ({ ...v, dateRange: { from: parseInt(daysFromStart - 1), to: daysFromEnd, difference: differenceInDays } }));
+      setTeleParams((v) => ({ ...v, dateRange: { from: parseInt(daysFromStart - 1), to: parseInt(daysFromEnd - 1), difference: differenceInDays } }));
     }
   };
 

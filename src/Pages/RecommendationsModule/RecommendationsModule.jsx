@@ -35,9 +35,9 @@ import moment from "moment";
 
 function Row(props) {
   const { row, fullData } = props;
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
-  console.log(fullData, "work on this");
+  // console.log(fullData, "work on this", row);
 
   return (
     <React.Fragment>
@@ -58,7 +58,7 @@ function Row(props) {
           {row.target || row.target1 || "N/A"}
         </TableCell>
         <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row.source || "N/A"}
+          {row?.source2?.map((el) => (el !== undefined ? el + ", " : row?.name)) || "N/A"}
         </TableCell>
         {row?.source !== "SBI" && (
           <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
@@ -76,7 +76,7 @@ function Row(props) {
                 More Data
               </Typography>
               <Typography variant='' component={"p"} sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-                {console.log(row, "this to show.")}
+                {/* {console.log(row, "this to show.")} */}
                 {row?.source === "ICICI" && (
                   <div className='row'>
                     <div className='col-6'>
@@ -170,7 +170,7 @@ const samllTableRecommendationData = [
 const RecommendationsModule = () => {
   const convertArrayToFormat = (dataArray) => {
     return dataArray.map((item) => {
-      console.log(item, "conversion array...");
+      // console.log(item, "conversion array...");
       return {
         name: item?.name !== "" ? `${item.name.split("<")?.[0]}` : "N/A",
         source: item?.source,
@@ -203,10 +203,10 @@ const RecommendationsModule = () => {
       if (res?.status === 200 && res3?.status === 200 && res4?.status === 200) {
         const convertArrayToFormat = (dataArray) => {
           return dataArray.map((item) => {
-            console.log(item, "conversion array...");
+            // console.log(item, "conversion array...");
             return {
               name: item?.name !== "" ? `${item.name.split("<")?.[0]}` : "N/A",
-              // source: source,
+              source: item?.source,
             };
           });
         };
@@ -220,7 +220,7 @@ const RecommendationsModule = () => {
 
         // const fivePaisaBackUp = convertArrayToFormat(res5?.data, "5 PAISA");
 
-        console.log(sbiBackUp, "this is the sbiiiiiiiii");
+        // console.log(sbiBackUp, "this is the sbiiiiiiiii");
         setAllRecom({ data: [...res?.data, ...res3?.data, ...res4?.data, ...sbiBackUp], loading: false });
         // setAllRecom({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
       }
@@ -238,7 +238,34 @@ const RecommendationsModule = () => {
     setCurrentPage(newPage);
   };
 
-  allRecom?.data.filter((obj) => {
+  const newData = allRecom?.data?.map((item) => {
+    const name2 = item.name.replace(/\s+/g, "").toLowerCase();
+    return { ...item, name2 };
+  });
+
+  const sourcesByLabel = {};
+
+  newData.forEach((item) => {
+    // console.log(item, "this is the item");
+    const { name2, source } = item;
+    if (!sourcesByLabel[name2]) {
+      sourcesByLabel[name2] = new Set();
+    }
+    sourcesByLabel[name2].add(source);
+  });
+  for (const name2 in sourcesByLabel) {
+    sourcesByLabel[name2] = Array.from(sourcesByLabel[name2]);
+  }
+
+  const finalArrZ = newData.map((el) => {
+    let name2 = el?.name2;
+    const arr = sourcesByLabel[name2];
+    return { ...el, source2: arr };
+  });
+
+  // console.log(finalArrZ, "this is the final array");
+
+  finalArrZ?.filter((obj) => {
     const key = obj.name;
     if (!uniqueElements.has(key)) {
       uniqueElements.set(key, obj);
@@ -258,7 +285,7 @@ const RecommendationsModule = () => {
     fetchRecommndations();
   }, []);
 
-  console.log(finalArray, "these are the recommendations", responseMoneyControl10Stocks);
+  // console.log(finalArray, "these are the recommendations", responseMoneyControl10Stocks);
 
   return (
     <AppLayout>
@@ -300,8 +327,10 @@ const RecommendationsModule = () => {
                 </TableHead>
                 <TableBody sx={{ fontFamily: "Roboto Slab", color: "white" }}>
                   {paginatedData?.map((row) => {
-                    console.log(row, "thisd");
-                    return <Row key={row.name} row={row} fullData={finalArray} sx={{ fontFamily: "Roboto Slab", color: "white" }} />;
+                    {
+                      /* console.log(row, "thisd"); */
+                    }
+                    return <Row key={row.name} row={row} fullData={finalArrZ} sx={{ fontFamily: "Roboto Slab", color: "white" }} />;
                   })}
                 </TableBody>
               </Table>
