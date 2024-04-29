@@ -37,32 +37,37 @@ function Row(props) {
   const { row, fullData } = props;
   const [open, setOpen] = useState(false);
 
-  // console.log(fullData, "work on this", row);
+  console.log("work on this", row);
 
   return (
     <React.Fragment>
       <TableRow className={""}>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} component='th' scope='row'>
+        <TableCell sx={{ fontFamily: "", color: "white" }} component='th' scope='row'>
           {row.name || row?.Name}
           {/* <p className='m-0'>Company's Name | NSE</p> */}
           {/* <hr className='m-0' style={{ color: "white" }} /> */}
           {/* <p className='m-0'>{row?.date || "Date not available"}</p> */}
         </TableCell>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+        <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
           {row?.date || "N/A"}
         </TableCell>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+        <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
           {row.ltp || row.cmp || "N/A"}
         </TableCell>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+        <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
           {row.target || row.target1 || "N/A"}
         </TableCell>
-        <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
-          {row?.source2?.map((el) => (el !== undefined ? el + ", " : row?.name)) || "N/A"}
+        <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
+          {/* {row?.source2?.map((el) => (el !== undefined ? el + ", " : row?.name)) || "N/A"} */}
+          {row?.source2
+            ?.map((el, index, array) => {
+              return el !== undefined ? el + (index < array.length - 1 ? ", " : "") : row?.name;
+            })
+            .join("")}
         </TableCell>
         {row?.source !== "SBI" && (
-          <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-            <IconButton sx={{ fontFamily: "Roboto Slab", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
+          <TableCell sx={{ fontFamily: "", color: "white" }}>
+            <IconButton sx={{ fontFamily: "", color: "white" }} aria-label='expand row' size='small' onClick={() => setOpen(!open)}>
               {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </IconButton>
           </TableCell>
@@ -72,10 +77,10 @@ function Row(props) {
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout='auto' unmountOnExit>
             <Box margin={1}>
-              <Typography variant='h6' gutterBottom component='p' sx={{ fontFamily: "Roboto Slab", color: "white" }}>
+              <Typography variant='h6' gutterBottom component='p' sx={{ fontFamily: "", color: "white" }}>
                 More Data
               </Typography>
-              <Typography variant='' component={"p"} sx={{ fontFamily: "Roboto Slab", color: "white" }}>
+              <Typography variant='' component={"p"} sx={{ fontFamily: "", color: "white" }}>
                 {/* {console.log(row, "this to show.")} */}
                 {row?.source === "ICICI" && (
                   <div className='row'>
@@ -185,7 +190,8 @@ const RecommendationsModule = () => {
   const [allRecom, setAllRecom] = useState({ data: [], loading: false });
 
   // const [allRecom, setAllRecom] = useState({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
-  const [mcResponse, setMcResponse] = useState({ data: responseMoneyControl10Stocks, loading: false });
+  // const [mcResponse, setMcResponse] = useState({ data: responseMoneyControl10Stocks, loading: false });
+  const [mcResponse, setMcResponse] = useState({ data: [], loading: false });
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
@@ -193,6 +199,8 @@ const RecommendationsModule = () => {
   const uniqueElements = new Map();
 
   const fetchRecommndations = async () => {
+    // setMcResponse((v) => ({ ...v, loading: true }));
+
     try {
       const res = await fetchIIFLRecommendations();
       const res2 = await fetchMCRecommendations();
@@ -225,7 +233,7 @@ const RecommendationsModule = () => {
         // setAllRecom({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
       }
       if (res2?.status === 200) {
-        // setMcResponse({ data: res2?.data, loading: false  });
+        setMcResponse({ data: res2?.data, loading: false });
       }
 
       // console.log(res2, "responseeeeeee");
@@ -308,29 +316,29 @@ const RecommendationsModule = () => {
             <TableContainer component={Paper} sx={{ border: "1px solid white" }}>
               <Table aria-label='collapsible table' className={`${styles?.tableWrapper}`}>
                 <TableHead className={`${styles?.tableHeadCell}`}>
-                  <TableRow sx={{ fontFamily: "Roboto Slab", color: "white" }}>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }}>Name</TableCell>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                  <TableRow sx={{ fontFamily: "", color: "white" }}>
+                    <TableCell sx={{ fontFamily: "", color: "white" }}>Name</TableCell>
+                    <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
                       Date
                     </TableCell>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                    <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
                       LTP/CMP
                     </TableCell>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                    <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
                       Target
                     </TableCell>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} align='right'>
+                    <TableCell sx={{ fontFamily: "", color: "white" }} align='right'>
                       Source
                     </TableCell>
-                    <TableCell sx={{ fontFamily: "Roboto Slab", color: "white" }} />
+                    <TableCell sx={{ fontFamily: "", color: "white" }} />
                   </TableRow>
                 </TableHead>
-                <TableBody sx={{ fontFamily: "Roboto Slab", color: "white" }}>
+                <TableBody sx={{ fontFamily: "", color: "white" }}>
                   {paginatedData?.map((row) => {
                     {
                       /* console.log(row, "thisd"); */
                     }
-                    return <Row key={row.name} row={row} fullData={finalArrZ} sx={{ fontFamily: "Roboto Slab", color: "white" }} />;
+                    return <Row key={row.name} row={row} fullData={finalArrZ} sx={{ fontFamily: "", color: "white" }} />;
                   })}
                 </TableBody>
               </Table>

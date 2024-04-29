@@ -74,7 +74,7 @@ const CustomTable = ({ headers, data, tableHeading, loader, height }) => {
                           );
                         }
                         return (
-                          <TableCell key={`${header.key}_${idx}`} sx={{ fontFamily: "Roboto Slab", color: "white" }}>
+                          <TableCell key={`${header.key}_${idx}`} sx={{ fontFamily: "", color: "white" }}>
                             {/* {header?.type
                           ? getColumnData(header.type, el[header?.key])
                           : Boolean(matchesGroupTag(el[header?.key]) || el[header?.key2] === true)
