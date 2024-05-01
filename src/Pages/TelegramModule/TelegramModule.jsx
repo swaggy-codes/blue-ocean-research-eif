@@ -218,6 +218,18 @@ const ViewGroupRecomComponent = ({ props }) => {
     }
   };
 
+  const convertToAMPM = (timeString) => {
+    const [hours, minutes] = timeString.split(":");
+
+    const hoursNum = parseInt(hours, 10);
+    const minutesNum = parseInt(minutes, 10);
+    const ampm = hoursNum >= 12 ? "PM" : "AM";
+    const displayHours = hoursNum % 12 || 12;
+    const formattedTime = `${displayHours}:${minutesNum.toString().padStart(2, "0")} ${ampm}`;
+
+    return formattedTime;
+  };
+
   const messageStringFormatted = formatMessages(JSON.stringify(messagesGroup));
 
   console.log(formatMessages(JSON.stringify(messagesGroup)), "this is the format message.");
@@ -300,7 +312,7 @@ const ViewGroupRecomComponent = ({ props }) => {
                   <div style={{ position: "absolute", bottom: 4, right: 12 }}>
                     <Typography variant='6' style={{ position: "relative", top: "2px", right: "25px", whiteSpace: "pre-wrap" }}>
                       {/* {moment(new Date()).format("llll")} */}
-                      {el?.date}
+                      {`${el?.date} ${convertToAMPM(el?.time)}`}
                     </Typography>
                     <VisibilityIcon sx={{ color: "white", position: "relative", right: "16px" }} />
                     <span style={{ position: "relative", top: "2px", right: "10px" }}>{formatViewsCount(el?.views)}</span>

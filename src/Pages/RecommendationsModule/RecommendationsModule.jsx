@@ -92,6 +92,14 @@ function Row(props) {
                       <p>Potential(%): {row?.potentialPerc || "N/A"}</p>
                       <p>Stop Loss: {row?.stopLoss || "N/A"}</p>
                     </div>
+                    <div className='col-6'>
+                      <p>
+                        Action:{" "}
+                        <button className={`btn btn-${row?.action === "SELL" ? "danger" : "success"} recommendations-table-action-button`}>
+                          {row.action}
+                        </button>
+                      </p>
+                    </div>
                   </div>
                 )}
                 {row?.source === "IIFL" && (
@@ -103,6 +111,14 @@ function Row(props) {
                     <div className='col-6'>
                       <p>All Time High: {row?.allTH || "N/A"}</p>
                       <p>Change: {row?.change || "N/A"}</p>
+                    </div>
+                    <div className='col-6'>
+                      <p>
+                        Action:{" "}
+                        <button className={`btn btn-${row?.action === "SELL" ? "danger" : "success"} recommendations-table-action-button`}>
+                          {row.action}
+                        </button>
+                      </p>
                     </div>
                   </div>
                 )}
@@ -289,11 +305,26 @@ const RecommendationsModule = () => {
 
   const paginatedData = finalArray.slice(startIndex, endIndex);
 
+  const getDateDifferenceInDays = (dateString1, dateString2) => {
+    const date1 = new Date(dateString1);
+    const date2 = new Date(dateString2);
+
+    const differenceInMs = date2.getTime() - date1.getTime();
+
+    const differenceInDays = differenceInMs / (1000 * 60 * 60 * 24);
+
+    return differenceInDays;
+  };
+
   useEffect(() => {
     fetchRecommndations();
   }, []);
 
-  // console.log(finalArray, "these are the recommendations", responseMoneyControl10Stocks);
+  let date_2 = finalArray?.[0]?.date.split(" ")[0];
+
+  const getDateDifference = getDateDifferenceInDays(moment(finalArray?.[99]?.date).format(), moment(date_2, "DD-MM-YYYY").toDate());
+
+  console.log(moment(finalArray?.[99]?.date).format(), "paginated data", date_2, moment(date_2, "DD-MM-YYYY").toDate(), getDateDifference);
 
   return (
     <AppLayout>
