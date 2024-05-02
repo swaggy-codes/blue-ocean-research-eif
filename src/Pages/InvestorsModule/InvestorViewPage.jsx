@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import AppLayout from "../../AppLayout/AppLayout";
 import Overview from "./InvestorViewSubHeadings/Overview";
 import Holdings from "./InvestorViewSubHeadings/Holdings";
@@ -8,9 +8,11 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import InsiderSAST from "./InvestorViewSubHeadings/InsiderSAST";
 
 const InvestorViewPage = () => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(2);
 
   const { state } = useLocation();
+
+  const navigate = useNavigate();
 
   console.log(state, "this is the location");
   return (
@@ -22,7 +24,12 @@ const InvestorViewPage = () => {
           <h5 style={{ textAlign: "start" }}>{state?.name}</h5>
         </div>
         <div className='col-6 text-end'>
-          <ArrowBackIcon />
+          <ArrowBackIcon
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate(-1);
+            }}
+          />
         </div>
       </div>
       {/* <hr style={{ color: "white", width: "20%" }} /> */}
@@ -31,7 +38,7 @@ const InvestorViewPage = () => {
           <div className='pe-1'>
             <div className='border-bottom pt-2 mb-2'>
               <ul className='nav nav-tabs overflow-x border-1'>
-                <li className='nav-item'>
+                {/* <li className='nav-item'>
                   <button
                     className={(step === 1 && "nav-link active") || "nav-link text-white"}
                     onClick={() => {
@@ -39,7 +46,7 @@ const InvestorViewPage = () => {
                     }}>
                     Overview
                   </button>
-                </li>
+                </li> */}
                 <li className='nav-item'>
                   <button
                     className={(step === 2 && "nav-link active") || "nav-link text-white"}

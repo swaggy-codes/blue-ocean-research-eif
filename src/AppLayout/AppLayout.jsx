@@ -40,6 +40,7 @@ import PriceChangeIcon from "@mui/icons-material/PriceChange";
 import StackedBarChartIcon from "@mui/icons-material/StackedBarChart";
 import PublicIcon from "@mui/icons-material/Public";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import styles from "./AppLayout.module.css";
@@ -139,6 +140,8 @@ const AppLayout = ({ children }) => {
       navigate("/global");
     } else if (i === 6) {
       navigate("/telegram-recommendations");
+    } else if (i === 7) {
+      navigate("/news-articles");
     }
   };
 
@@ -171,27 +174,30 @@ const AppLayout = ({ children }) => {
         </DrawerHeader>
         <Divider />
         <List sx={{ bgcolor: "#020817", color: "white" }}>
-          {["Economical", "Industrial", "Financial", "Recommendations", "Investors Module", "Global Module", "Telegram"].map((el, i) => (
-            <ListItem
-              key={el}
-              disablePadding
-              onClick={() => {
-                handleScreenChange(el, i);
-              }}>
-              <ListItemButton>
-                <ListItemIcon>
-                  {i === 0 ? <QueryStatsIcon sx={{ color: "white" }} /> : ""}
-                  {i === 1 ? <StackedBarChartIcon sx={{ color: "white" }} /> : ""}
-                  {i === 2 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
-                  {i === 3 ? <RecommendIcon sx={{ color: "white" }} /> : ""}
-                  {i === 4 ? <PersonOutlineIcon sx={{ color: "white" }} /> : ""}
-                  {i === 5 ? <PublicIcon sx={{ color: "white" }} /> : ""}
-                  {i === 6 ? <TelegramIcon sx={{ color: "white" }} /> : ""}
-                </ListItemIcon>
-                <ListItemText primary={el} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          {["Economical", "Industrial", "Financial", "Recommendations", "Investors Module", "Global Module", "Telegram", "News Articles"].map(
+            (el, i) => (
+              <ListItem
+                key={el}
+                disablePadding
+                onClick={() => {
+                  handleScreenChange(el, i);
+                }}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {i === 0 ? <QueryStatsIcon sx={{ color: "white" }} /> : ""}
+                    {i === 1 ? <StackedBarChartIcon sx={{ color: "white" }} /> : ""}
+                    {i === 2 ? <PriceChangeIcon sx={{ color: "white" }} /> : ""}
+                    {i === 3 ? <RecommendIcon sx={{ color: "white" }} /> : ""}
+                    {i === 4 ? <PersonOutlineIcon sx={{ color: "white" }} /> : ""}
+                    {i === 5 ? <PublicIcon sx={{ color: "white" }} /> : ""}
+                    {i === 6 ? <TelegramIcon sx={{ color: "white" }} /> : ""}
+                    {i === 7 ? <NewspaperIcon sx={{ color: "white" }} /> : ""}
+                  </ListItemIcon>
+                  <ListItemText primary={el} />
+                </ListItemButton>
+              </ListItem>
+            )
+          )}
         </List>
         <Divider />
         <List sx={{ bgcolor: "#020817", color: "white", minHeight: "100%" }} className='custom-scrollbar'>

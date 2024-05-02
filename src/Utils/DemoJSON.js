@@ -20923,3 +20923,126 @@ export const responseFivePaisa = [
     source: "5 PAISA",
   },
 ];
+
+export const newsArticles = [
+  {
+    id: 1,
+    title: "The 10 Best Web Development YouTube Channels",
+    description: "The 10 Best Web Development YouTube Channels",
+    url: "https://www.freecodecamp.org/news/the-10-best-web-development-youtube-channels/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/10-best-youtube-channels.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 2,
+    title: "How to Build a Simple Blog Using React and GraphQL",
+    description: "How to Build a Simple Blog Using React and GraphQL",
+    url: "https://www.freecodecamp.org/news/how-to-build-a-simple-blog-using-react-and-graphql/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/How-to-Build-a-Simple-Blog-Using-React-and-GraphQL.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 1,
+    title: "The 10 Best Web Development YouTube Channels",
+    description: "The 10 Best Web Development YouTube Channels",
+    url: "https://www.freecodecamp.org/news/the-10-best-web-development-youtube-channels/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/10-best-youtube-channels.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 2,
+    title: "How to Build a Simple Blog Using React and GraphQL",
+    description: "How to Build a Simple Blog Using React and GraphQL",
+    url: "https://www.freecodecamp.org/news/how-to-build-a-simple-blog-using-react-and-graphql/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/How-to-Build-a-Simple-Blog-Using-React-and-GraphQL.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 1,
+    title: "The 10 Best Web Development YouTube Channels",
+    description: "The 10 Best Web Development YouTube Channels",
+    url: "https://www.freecodecamp.org/news/the-10-best-web-development-youtube-channels/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/10-best-youtube-channels.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 2,
+    title: "How to Build a Simple Blog Using React and GraphQL",
+    description: "How to Build a Simple Blog Using React and GraphQL",
+    url: "https://www.freecodecamp.org/news/how-to-build-a-simple-blog-using-react-and-graphql/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/How-to-Build-a-Simple-Blog-Using-React-and-GraphQL.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 1,
+    title: "The 10 Best Web Development YouTube Channels",
+    description: "The 10 Best Web Development YouTube Channels",
+    url: "https://www.freecodecamp.org/news/the-10-best-web-development-youtube-channels/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/10-best-youtube-channels.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 2,
+    title: "How to Build a Simple Blog Using React and GraphQL",
+    description: "How to Build a Simple Blog Using React and GraphQL",
+    url: "https://www.freecodecamp.org/news/how-to-build-a-simple-blog-using-react-and-graphql/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/How-to-Build-a-Simple-Blog-Using-React-and-GraphQL.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 1,
+    title: "The 10 Best Web Development YouTube Channels",
+    description: "The 10 Best Web Development YouTube Channels",
+    url: "https://www.freecodecamp.org/news/the-10-best-web-development-youtube-channels/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/10-best-youtube-channels.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+  {
+    id: 2,
+    title: "How to Build a Simple Blog Using React and GraphQL",
+    description: "How to Build a Simple Blog Using React and GraphQL",
+    url: "https://www.freecodecamp.org/news/how-to-build-a-simple-blog-using-react-and-graphql/",
+    image: "https://www.freecodecamp.org/news/content/images/2020/07/How-to-Build-a-Simple-Blog-Using-React-and-GraphQL.png",
+    publishedAt: "20-07-2023",
+    source: {
+      name: "freeCodeCamp.org",
+      url: "https://www.freecodecamp.org",
+    },
+  },
+];

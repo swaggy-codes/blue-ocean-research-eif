@@ -249,7 +249,7 @@ const RecommendationsModule = () => {
         // setAllRecom({ data: [...responseICICI, ...responseIIFL, ...sbiBackUpTwo, ...responseFivePaisa], loading: false });
       }
       if (res2?.status === 200) {
-        setMcResponse({ data: res2?.data, loading: false });
+        // setMcResponse({ data: res2?.data, loading: false });
       }
 
       // console.log(res2, "responseeeeeee");
@@ -326,9 +326,11 @@ const RecommendationsModule = () => {
 
   console.log(moment(finalArray?.[99]?.date).format(), "paginated data", date_2, moment(date_2, "DD-MM-YYYY").toDate(), getDateDifference);
 
+  // const paginatedData2 = [];
+
   return (
     <AppLayout>
-      <div className='p-4'>
+      <div className='p-0'>
         {/* <div className='row'>
           <div className='col-lg-12 d-flex justify-content-center'>
             <Header />
@@ -339,12 +341,14 @@ const RecommendationsModule = () => {
           <hr style={{ color: "white" }} />
           <div className='col-4 ps-0'>
             <h5>What to do with these stocks?</h5>
-            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} height={"70%"} />
+            <CustomTable headers={tableHeaders} data={mcResponse?.data} loader={mcResponse?.loading} height={"450px"} />
           </div>
           <div className='col-8 pe-0'>
             <h5>Recommended Stocks</h5>
             <hr style={{ color: "white" }} />
-            <TableContainer component={Paper} sx={{ border: "1px solid white" }}>
+            <TableContainer
+              component={Paper}
+              sx={{ border: "1px solid white", borderRadius: "0px", minHeight: "450px", maxHeight: "450px", backgroundColor: "rgba(0, 0, 0, 0.87)" }}>
               <Table aria-label='collapsible table' className={`${styles?.tableWrapper}`}>
                 <TableHead className={`${styles?.tableHeadCell}`}>
                   <TableRow sx={{ fontFamily: "", color: "white" }}>
@@ -381,6 +385,7 @@ const RecommendationsModule = () => {
                     backgroundColor: "#020817",
                     color: "white",
                     padding: "1rem",
+                    height: "100%",
                   }}>
                   <TableLoader />
                 </Box>

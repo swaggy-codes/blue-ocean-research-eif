@@ -10,6 +10,7 @@ import InvestorsModule from "../Pages/InvestorsModule/InvestorsModule";
 import GlobalModule from "../Pages/GlobalModule/GlobalModule";
 import InvestorViewPage from "../Pages/InvestorsModule/InvestorViewPage";
 import TelegramModule from "../Pages/TelegramModule/TelegramModule";
+import NewsArticleModule from "../Pages/NewsArticlesModule/NewsArticleModule";
 
 const MainRouter = () => {
   return (
@@ -24,6 +25,7 @@ const MainRouter = () => {
       <Route path='/investor-view' element={<InvestorViewPage />} />
       <Route path='/global' element={<GlobalModule />} />
       <Route path='/telegram-recommendations' element={<TelegramModule />} />
+      <Route path='/news-articles' element={<NewsArticleModule />} />
     </Routes>
   );
 };

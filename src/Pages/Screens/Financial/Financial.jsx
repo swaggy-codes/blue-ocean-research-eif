@@ -74,6 +74,8 @@ const Financial = () => {
     <AppLayout>
       <Box>
         <Box sx={{ padding: "20px", paddingTop: "0px" }}>
+          <h4>FINANCIAL MODULE</h4>
+          <hr style={{ color: "white" }} />
           <div className='main mt-2'>
             <div className='mob-p-0'>
               <div className='pe-1'>

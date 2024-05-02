@@ -29,14 +29,14 @@ const InvestorsModule = () => {
         <div className='row mt-4 h-100'>
           <h4>INVESTORS MODULE</h4>
           <hr style={{ color: "white" }} />
-          <div className='col-4 ps-0'>
+          <div className='col-4 ps-0' style={{ height: "350px" }}>
             <h4>Individual Investors</h4>
             <hr />
             <div className='d-flex justify-content-around'>
               <div className='pt-2 pb-2'>Name</div>
               <div className='pt-2 pb-2'>Networth(Crs.)</div>
             </div>
-            <div className='' style={{ overflowY: "auto", maxHeight: "50%", minHeight: "50%" }}>
+            <div className='' style={{ overflowY: "auto", maxHeight: "350px", minHeight: "auto" }}>
               {arr?.map(() => {
                 return (
                   <Card

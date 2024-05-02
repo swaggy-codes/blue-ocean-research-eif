@@ -105,7 +105,7 @@ const CustomTable = ({ headers, data, tableHeading, loader, height }) => {
             ""
           )}
           {loader ? (
-            <Box sx={{ margin: "10px" }}>
+            <Box sx={{ margin: "10px", paddingTop: "10px" }}>
               <TableLoader />
             </Box>
           ) : (

@@ -13,8 +13,8 @@ import moment from "moment";
 import { debounce } from "../../Utils/HelperFunctions";
 
 const TelegramModule = () => {
-  const [telegramRecom, setTelegramRecom] = useState({ data: telegramData, loading: false });
-  // const [telegramRecom, setTelegramRecom] = useState({ data: [], loading: false });
+  // const [telegramRecom, setTelegramRecom] = useState({ data: telegramData, loading: false });
+  const [telegramRecom, setTelegramRecom] = useState({ data: [], loading: false });
   const [searchQuery, setSearchQuery] = useState("");
   const [searchInstanceResponse, setSearchInstanceResponse] = useState("");
 
@@ -27,11 +27,11 @@ const TelegramModule = () => {
   };
 
   // console.log(teleParams?.dateRange, "this is the telgram data...");
-  const getTeleRecom = async (search) => {
+  const getTeleRecom = async () => {
     setTelegramRecom((v) => ({ ...v, loading: true }));
     try {
       const res = await Promise.resolve(
-        fetchTelegramDataWithDateRange(parseInt(teleParams?.dateRange?.from), parseInt(teleParams?.dateRange?.to - 1), search)
+        fetchTelegramDataWithDateRange(parseInt(teleParams?.dateRange?.from), parseInt(teleParams?.dateRange?.to - 1))
       );
       if (res?.status === 200) {
         setTelegramRecom(() => ({ data: res?.data, loading: false }));
@@ -60,14 +60,14 @@ const TelegramModule = () => {
   const debouncedSearch = useCallback(
     debounce((term) => {
       getRecomInstance(term);
-      console.log("Fetching data with term:", term);
+      // console.log("Fetching data with term:", term);
     }, 900),
     []
   );
 
   useEffect(() => {
     if (!isNaN(teleParams?.dateRange?.from) && !isNaN(teleParams?.dateRange?.to !== NaN)) {
-      getTeleRecom("");
+      getTeleRecom();
     }
   }, [teleParams?.dateRange]);
 
@@ -80,81 +80,79 @@ const TelegramModule = () => {
       {" "}
       <div className='p-4'>
         <div className='row h-100'>
-          {telegramRecom?.loading === false && telegramRecom?.data?.length > 0 && (
-            <>
-              <div className='row'>
-                <div className='col-4'></div>
-                <div className='col-4'>
-                  <h4>TELEGRAM RECOMMENDATIONS</h4>
-                </div>
-                <div className='col-4 d-flex justify-content-end mb-2 p-0'>
-                  <input
-                    className='form-control mr-sm-2 w-50'
-                    value={searchQuery}
-                    onChange={(e) => handleInputChange(e)}
-                    type='search'
-                    placeholder='Search'
-                    aria-label='Search'
-                    style={{ width: "20%" }}
-                  />
-                  {searchInstanceResponse !== "" && <p className='ps-2'>Instance Count: {searchInstanceResponse}</p>}
-                </div>
-              </div>
+          <div className='row'>
+            <div className='col-4'></div>
+            <div className='col-4'>
+              <h4>TELEGRAM RECOMMENDATIONS</h4>
+            </div>
+            <div className='col-4 d-flex justify-content-end mb-2 p-0'>
+              <input
+                className='form-control mr-sm-2 w-50'
+                value={searchQuery}
+                onChange={(e) => handleInputChange(e)}
+                type='search'
+                placeholder='Search'
+                aria-label='Search'
+                style={{ width: "20%" }}
+              />
+              {searchInstanceResponse !== "" && <p className='ps-2'>Instance Count: {searchInstanceResponse}</p>}
+            </div>
+          </div>
 
-              <hr style={{ color: "white" }} />
-              <div className='col-4 ps-0'>
-                <h4>Groups</h4>
-                <hr />
+          <hr style={{ color: "white" }} />
+          <div className='col-4 ps-0'>
+            <h4>Groups</h4>
+            {/* <hr /> */}
 
-                {/* <div className='d-flex justify-content-around'>
+            {/* <div className='d-flex justify-content-around'>
               <div className='pt-2 pb-2'>Name</div>
               <div className='pt-2 pb-2'>Networth(Crs.)</div>
             </div> */}
-                <div className='' style={{ overflowY: "auto", maxHeight: "60vh" }}>
-                  {telegramRecom?.data?.map((el, i) => {
-                    return (
-                      <Card
-                        sx={{
-                          backgroundColor: "#0e1422",
-                          color: "white",
+            <div className='' style={{ overflowY: "auto", maxHeight: "450px", minHeight: "450px", border: "1px solid white", padding: "10px" }}>
+              {telegramRecom?.loading === false &&
+                telegramRecom?.data?.length > 0 &&
+                telegramRecom?.data?.map((el, i) => {
+                  return (
+                    <Card
+                      sx={{
+                        backgroundColor: "#0e1422",
+                        color: "white",
+                        borderRadius: 4,
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                        marginBottom: "8px",
+                        cursor: "pointer",
+                        "&:hover": {
+                          transform: "scale(.97)",
                           borderRadius: 4,
-                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                          marginBottom: "8px",
-                          cursor: "pointer",
-                          "&:hover": {
-                            transform: "scale(.97)",
-                            borderRadius: 4,
-                          },
-                        }}
-                        onClick={() => handleViewGroupRecom(el)}>
-                        <CardContent sx={{ display: "flex", flexDirection: "row", alignItems: "center", paddingBottom: "10px !important" }}>
-                          <div style={{ flex: 2, paddingRight: "16px" }}>
-                            <div style={{ marginBottom: "8px" }}>
-                              <Typography variant='6'>{el?.grpName || "N/A"}</Typography>
-                              <Typography variant='body1'>Subscribers : {el?.subscribers || "N/A"}</Typography>
-                            </div>
+                        },
+                      }}
+                      onClick={() => handleViewGroupRecom(el)}>
+                      <CardContent sx={{ display: "flex", flexDirection: "row", alignItems: "center", paddingBottom: "10px !important" }}>
+                        <div style={{ flex: 2, paddingRight: "16px" }}>
+                          <div style={{ marginBottom: "8px" }}>
+                            <Typography variant='6'>{el?.grpName || "N/A"}</Typography>
+                            <Typography variant='body1'>Subscribers : {el?.subscribers || "N/A"}</Typography>
                           </div>
-                          {/* <div style={{ flex: 2 }}>
+                        </div>
+                        {/* <div style={{ flex: 2 }}>
                         <div>
                           <Typography variant='h5'>123,123</Typography>
                         </div>
                       </div> */}
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              {telegramRecom?.loading === true && (
+                <div className='text-center p-2'>
+                  <TableLoader />
                 </div>
-              </div>
-              <div className='col-8'>
-                <ViewGroupRecomComponent props={{ messagesGroup, setTeleParams }} />
-              </div>
-            </>
-          )}
-          {telegramRecom?.loading === true && (
-            <div className='text-center'>
-              <TableLoader />
+              )}
             </div>
-          )}
+          </div>
+          <div className='col-8'>
+            <ViewGroupRecomComponent props={{ messagesGroup, setTeleParams, loading: telegramRecom?.loading }} />
+          </div>
         </div>
       </div>
     </AppLayout>
@@ -162,7 +160,7 @@ const TelegramModule = () => {
 };
 
 const ViewGroupRecomComponent = ({ props }) => {
-  const { messagesGroup, setTeleParams } = props;
+  const { messagesGroup, setTeleParams, loading } = props;
   console.log(messagesGroup, "inside the messages component");
 
   const [demo, setDemo] = useState([]);
@@ -249,7 +247,7 @@ const ViewGroupRecomComponent = ({ props }) => {
   return (
     <>
       <div className='row mb-2'>
-        <div className='col-9'>{messagesGroup?.grpName ? <h6>{messagesGroup?.grpName}</h6> : <h4>MESSAGES</h4>}</div>
+        <div className='col-9'>{messagesGroup?.grpName ? <h6>{messagesGroup?.grpName}</h6> : <h6>MESSAGES</h6>}</div>
         <div className='col-3'>
           <Flatpickr
             className='calender_field form-control custom-form-control'
@@ -271,12 +269,13 @@ const ViewGroupRecomComponent = ({ props }) => {
       </div>
       {/* <div className='messages-wrapper'></div> */}
       {/* <h5>{messageStringFormatted}</h5> */}
-      <hr style={{ color: "white", margin: "0px" }} />
+      {/* <hr style={{ color: "white", margin: "0px" }} /> */}
       {/* <button className='btn btn-primary' onClick={() => loginDemo()}>
         Click Me
       </button> */}
-      <div className='' style={{ overflowY: "auto", maxHeight: "60vh" }}>
-        {messagesGroup?.messages.length > 0 &&
+      <div className='' style={{ overflowY: "auto", maxHeight: "450px", minHeight: "450px", border: "1px solid white", padding: "10px" }}>
+        {loading === false &&
+          messagesGroup?.messages.length > 0 &&
           messagesGroup?.messages?.map((el, i) => {
             console.log(el, "this is the message el");
             return (
@@ -287,10 +286,10 @@ const ViewGroupRecomComponent = ({ props }) => {
                   borderRadius: 4,
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                   marginBottom: "8px",
-                  "&:hover": {
-                    transform: "scale(.99)",
-                    borderRadius: 4,
-                  },
+                  // "&:hover": {
+                  //   transform: "scale(1.99)",
+                  //   borderRadius: 4,
+                  // },
                 }}
                 key={i + "x"}>
                 <CardContent
@@ -321,7 +320,12 @@ const ViewGroupRecomComponent = ({ props }) => {
               </Card>
             );
           })}
-        {messagesGroup?.messages.length === 0 && <div className='mt-4'>No messages found.</div>}
+        {messagesGroup?.messages.length === 0 && loading === false && <div className='mt-4'>No messages found.</div>}
+        {loading && (
+          <div className='text-center p-2'>
+            <TableLoader />
+          </div>
+        )}
       </div>
     </>
   );

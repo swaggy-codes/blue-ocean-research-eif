@@ -20,6 +20,8 @@ const Industrial = () => {
     <AppLayout>
       <Box>
         {/* <h1 style={{ color: "white" }}>Industrial</h1> */}
+        <h4>INDUSTRIAL MODULE</h4>
+        <hr style={{ color: "white" }} />
         <Grid container spacing={2} columns={16}>
           <Grid item xs={6}>
             <Grid spacing={2} columns={16} sx={{ display: "flex", justifyContent: "space-evenly" }}>
@@ -33,7 +35,7 @@ const Industrial = () => {
             <List
               sx={{
                 width: "100%",
-                height: "80vh",
+                height: "70vh",
                 maxWidth: "auto",
                 bgcolor: "#020817",
                 border: 1,
@@ -74,7 +76,7 @@ const Industrial = () => {
             <List
               sx={{
                 width: "100%",
-                height: "80vh",
+                height: "70vh",
                 maxWidth: "auto",
                 bgcolor: "#020817",
                 border: 1,
